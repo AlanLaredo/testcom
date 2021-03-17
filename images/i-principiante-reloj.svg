@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="55px" height="51px" viewBox="0 0 55 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>i-principiante-reloj</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-1019.000000, -877.000000)">
+            <g id="i-principiante-reloj" sketch:type="MSLayerGroup" transform="translate(1020.000000, 877.000000)">
+                <path d="M-0.016,25.489 C-0.016,39.569 11.398,50.985 25.48,50.985 L25.48,-0.006 C11.398,-0.006 -0.016,11.407 -0.016,25.489" id="Fill-1" fill="#DFDEDA" sketch:type="MSShapeGroup"></path>
+                <path d="M28.117,-0.006 L28.117,50.985 C42.198,50.985 53.613,39.569 53.613,25.489 C53.613,11.407 42.198,-0.006 28.117,-0.006" id="Fill-2" fill="#DFDEDA" sketch:type="MSShapeGroup"></path>
+                <path d="M25.48,-0.006 L25.48,50.985 C39.562,50.985 50.976,39.569 50.976,25.489 C50.976,11.407 39.562,-0.006 25.48,-0.006" id="Fill-3" fill="#B1B1AE" sketch:type="MSShapeGroup"></path>
+                <path d="M46.287,25.489 C46.287,36.981 36.972,46.295 25.48,46.295 C13.988,46.295 4.673,36.981 4.673,25.489 C4.673,13.997 13.988,4.682 25.48,4.682 C36.972,4.682 46.287,13.997 46.287,25.489" id="Fill-4" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M25.48,10.565 L25.48,15.407 M30.866,11.545 L29.161,16.077 M35.562,14.36 L32.371,18 M38.967,18.649 L34.697,20.932 M40.643,23.86 L35.843,24.495 M40.376,29.329 L35.66,28.231 M38.2,34.352 L34.173,31.665 M34.395,38.288 L31.571,34.356 M29.447,40.631 L28.19,35.957 M23.991,41.082 L24.461,36.264 M18.726,39.585 L20.862,35.241 M14.326,36.327 L17.854,33.014 M11.354,31.729 L15.823,29.872 M10.193,26.379 L15.029,26.215 M10.989,20.963 L15.573,22.512 M13.642,16.174 L17.388,19.239 M17.812,12.627 L20.237,16.815" id="Stroke-5" stroke="#9B9B98" stroke-width="0.879" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M27.604,25.489 C27.604,26.663 26.653,27.614 25.48,27.614 C24.307,27.614 23.354,26.663 23.354,25.489 C23.354,24.315 24.307,23.364 25.48,23.364 C26.653,23.364 27.604,24.315 27.604,25.489" id="Fill-6" fill="#000000" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
