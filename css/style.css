@@ -49,6 +49,11 @@ body {
     color: #102638;
 }
 
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
 /*-----------------------------------END GLOBAL&THEME STYLES-----------------------------------*/
 /*-----------------------------------FLEXBOX STYLES-----------------------------------*/
 .flex-container {
@@ -273,20 +278,6 @@ footer div  {
     border-top: 1px solid white;
     background-size: 100%;
 }
-/*.our-company div {
-    border: 1px solid red;
-}*/
-#our-company {
-    max-width: 670px;
-}
-
-#vision-company {
-    max-width: 525px;
-}
-
-#mission-company {
-    max-width: 525px;
-}
 
 .our-company-item {
     padding: 20px;
@@ -301,6 +292,7 @@ footer div  {
 }
 .our-company-text {
     text-align: justify;
+    max-width: 670px;
 }
 /*-----------------------------------END INDEX.HTML STYLES-----------------------------------*/
 /*-----------------------------------RECETARIO.HTML STYLES-----------------------------------*/
