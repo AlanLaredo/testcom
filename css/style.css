@@ -1,4 +1,4 @@
-/*-----------------------------------GLOBAL STYLES-----------------------------------*/
+/*-----------------------------------GLOBAL&THEME STYLES-----------------------------------*/
 @import url(fonts.css?family=Noto+Sans:400,700,400italic);
 * {
     box-sizing: border-box;
@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     margin: 0;
+    background: #f8f8f8;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -34,7 +35,89 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-/*-----------------------------------GLOBAL STYLES-----------------------------------*/
+.item-title-red, .item-title-red i {
+    color: #e9212d;
+    font-size: 18px;
+    font-family: PTBoldItalic;
+}
+
+/*-----------------------------------END GLOBAL&THEME STYLES-----------------------------------*/
+/*-----------------------------------FLEXBOX STYLES-----------------------------------*/
+.flex-container {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: end;
+}
+.align-stretch {
+    align-items: stretch;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.direction-row {
+    flex-direction: row;
+}
+.direction-column {
+    flex-direction: column;
+}
+.flex-item {
+}
+.bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-justify {
+    text-align: justify;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+.flex-grow-3 {
+    flex-grow: 3;
+}
+/*-----------------------------------END FLEXBOX STYLES-----------------------------------*/
+/*-----------------------------------GENERAL STYLES-----------------------------------*/
+/*  COLORS  */
+.color-red {
+    color: #e9212d;
+}
+/*  OPACITY  */
+.opacity-4 {
+    opacity: .4;
+}
+.opacity-6 {
+    opacity: .6;
+}
+/*-----------------------------------END GENERAL STYLES-----------------------------------*/
+/*-----------------------------------DEV STYLES-----------------------------------*/
+.dev-br {
+    border: 1px solid red;
+}
+.dev-bb {
+    border: 1px solid blue;
+}
+.dev-bk-red {
+    background: red;
+}
+.a-expand {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+/*-----------------------------------END DEV STYLES-----------------------------------*/
 /*-----------------------------------HEADER STYLES-----------------------------------*/
 .header {
     background: #f8f8f8;
@@ -102,59 +185,6 @@ footer div  {
     height: 70px;
 }
 /*-----------------------------------END FOOTER STYLES-----------------------------------*/
-/*-----------------------------------FLEXBOX STYLES-----------------------------------*/
-.flex-container {
-    display: flex;
-}
-.align-center {
-    align-items: center;
-}
-
-.align-center {
-    align-items: center;
-}
-.align-end {
-    align-items: end;
-}
-.justify-center {
-    justify-content: center;
-}
-.justify-end {
-    justify-content: flex-end;
-}
-.justify-space-between {
-    justify-content: space-between;
-}
-.direction-row {
-    flex-direction: row;
-}
-.direction-column {
-    flex-direction: column;
-}
-
-.bg-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.text-justify {
-    text-align: justify;
-}
-
-.text-right  {
-    text-align: right;
-}
-
-/*  colors  */
-.color-red {
-    color: #e9212d;
-}
-.opacity-4 {
-    opacity: .4;
-}
-.opacity-6 {
-    opacity: .6;
-}
-/*-----------------------------------END FLEXBOX STYLES-----------------------------------*/
 /*-----------------------------------INDEX.HTML STYLES-----------------------------------*/
 .navigation-menu {
     height: 100%;
@@ -179,7 +209,6 @@ footer div  {
     background-image: linear-gradient(#00000003, #00000003),url("../images/pic-btn-industrial.jpg" );
     flex: 0 0 25vw;
 }
-
 .index-menu-option-title div { 
     margin-bottom: 10px;
 }
@@ -263,7 +292,40 @@ footer div  {
     line-height: 60px;
 }
 .our-company-text {
-    //max-width: 600px;
     text-align: justify;
 }
 /*-----------------------------------END INDEX.HTML STYLES-----------------------------------*/
+/*-----------------------------------RECETARIO.HTML STYLES-----------------------------------*/
+.recipe-book-title {
+    width: 550px;
+    color: #102638;
+    text-align: center;
+    font-size: 24px;
+    font-family: PTItalic;
+    margin-bottom: 40px;
+    line-height: 160%;
+}
+.recipe-book-container {
+    height: 100%;
+
+}
+.recipe-book-title i {
+    color: #102638;
+}
+.recipe-book-column {
+    width: 100%;
+    padding: 18px;
+}
+.recipe-book-item div {
+    color: #102638;
+}
+.recipe-book-item-image {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    border-bottom: 10px solid #e9212d;
+}
+.recipe-book-sinaloense {
+    background-image: url("../images/recetario/sinaloense/thumb.png" );
+}
+/*-----------------------------------END RECETARIO.HTML STYLES-----------------------------------*/
