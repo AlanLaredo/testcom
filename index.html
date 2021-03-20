@@ -22,12 +22,12 @@
     <header class="header flex-container justify-space-between align-center">
         <div class="flex-container ">
             <div class="logo">
-                <a href="." title="Palmex">
+                <a href="" title="Palmex">
                     <img src="images/palmex-logo.png" alt="Palmex" height="97" width="170">
                 </a>
             </div>
         </div>
-        <div class="flex-container">
+        <div class="flex-container" id="menu">
             <div>
                 <b><a href="categorias-productos.html">Catálogo de productos</a></b>
             </div>
@@ -40,12 +40,10 @@
             <div>
                 <b><a href="contacto.html">Contacto</a></b>
             </div>
-            <div class="header-phone">
+            <div class="header-phone flex-container align-center">
                 <a href="tel:8004725639">
                     <img src="images/i-phone.svg" height="16" width="16" alt="Teléfono" aria-hidden="true">
                 </a>
-            </div>
-            <div class="header-phone">
                 <span>01-800-472-5639</span>
             </div>
             <div>
@@ -55,32 +53,32 @@
     </header>
     <div class="flex-container navigation-menu">
         <div class="flex-container align-center justify-center i-want-start-my-business bg-img index-menu-option-title">
-            <a href="quiero-iniciar-mi-negocio.html">
-                <div class="flex-container align-center justify-center">
+            <a href="quiero-iniciar-mi-negocio.html" class="flex-container align-center justify-center direction-column">
+                <div>
                     <img src="images/i-negocio.svg" alt="Quiero iniciar mi negocio" height="54" width="58">
                 </div>
                 <span><i>Quiero iniciar mi negocio</i></span>
             </a>
         </div>
         <div class="flex-container align-center justify-center i-am-fryer bg-img index-menu-option-title">
-            <a href="quiero-iniciar-mi-negocio.html">
-                <div class="flex-container align-center justify-center">
+            <a href="quiero-iniciar-mi-negocio.html" class="flex-container align-center justify-center direction-column">
+                <div>
                     <img src="images/i-freidor.svg" alt="Quiero iniciar mi negocio" height="54" width="58">
                 </div>
                 <span><i>Soy Freidor</i></span>
             </a>
         </div>
         <div class="flex-container align-center justify-center i-am-wholesaler bg-img index-menu-option-title">
-            <a href="quiero-iniciar-mi-negocio.html">
-                <div class="flex-container align-center justify-center">
+            <a href="quiero-iniciar-mi-negocio.html" class="flex-container align-center justify-center direction-column">
+                <div>
                     <img src="images/i-mayorista.svg" alt="Quiero iniciar mi negocio" height="54" width="58">
                 </div>
                 <span><i>Soy Mayorista</i></span>
             </a>
         </div>
         <div class="flex-container align-center justify-center i-am-manufacturer bg-img index-menu-option-title">
-             <a href="quiero-iniciar-mi-negocio.html">
-                <div class="flex-container align-center justify-center">
+             <a href="quiero-iniciar-mi-negocio.html" class="flex-container align-center justify-center direction-column">
+                <div>
                     <img src="images/i-industrial.svg" alt="Quiero iniciar mi negocio" height="54" width="58">
                 </div>
                 <span><i>Soy fabricante industrial de botanas</i></span>
@@ -91,17 +89,23 @@
         <div class="flex-container direction-column justify-center our-company-item">
             <div class="our-company-title"><i>Nuestra Empresa</i></div>
             <div class="flex-container justify-center">
-                <div class="our-company-text">Somos el principal y mejor proveedor de pellets para botana de México, Estados Unidos y América Latina y un proveedor creciente en el segmento de cereal. Somos reconocidos por nuestra alta calidad, consistencia y servicio que proveemos a nuestros clientes.</div>
+                <div id="our-company" class="our-company-text">
+                    <p>Somos el principal y mejor proveedor de pellets para botana de México, Estados Unidos y América Latina y un proveedor creciente en el segmento de cereal. Somos reconocidos por nuestra alta calidad, consistencia y servicio que proveemos a nuestros clientes.</p>
+                </div>
             </div>
         </div>
         <div class="flex-container direction-row justify-center">
             <div class="our-company-item">
                 <div class="our-company-title"><i>Misión</i></div>
-                <div class="our-company-text">Proveer con excelencia y orgullo, productos que satisfagan a nuestros clientes y consumidores, asegurando el desarrollo integral de nuestra gente y generando valor para el negocio y para la comunidad.</div>
+                <div id="mission-company" class="our-company-text">
+                    <p>Proveer con excelencia y orgullo, productos que satisfagan a nuestros clientes y consumidores, asegurando el desarrollo integral de nuestra gente y generando valor para el negocio y para la comunidad.</p>
+                </div>
             </div>
             <div class="our-company-item">
                 <div class="our-company-title"><i>Visión</i></div>
-                <div class="our-company-text">Ser una empresa líder, en los mercados nacionales e internacionales, de productos alimenticios de gran volumen de ventas, cumpliendo con los estándares de higiene, calidad y servicio requeridos por nuestros clientes, desarrollando tecnología que asegure la mejora continua y el crecimiento en nuevos productos.</div>
+                <div id="vision-company" class="our-company-text">
+                    <p>Ser una empresa líder, en los mercados nacionales e internacionales, de productos alimenticios de gran volumen de ventas, cumpliendo con los estándares de higiene, calidad y servicio requeridos por nuestros clientes, desarrollando tecnología que asegure la mejora continua y el crecimiento en nuevos productos.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -164,8 +168,8 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-container justify-end">
-                <ul>
+            <div class="flex-container justify-end ">
+                <ul class="text-right">
                     <li class="color-red opacity-6">Política de privacidad</li>
                     <li class="color-red opacity-6">Código de Ética PALMEX</li>
                 </ul>
