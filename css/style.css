@@ -40,7 +40,7 @@ body {
     font-size: 18px;
     font-family: PTBoldItalic;
 }
-.item-content, .item-content p {
+.item-content, .item-content p, .item-content i, .item-content h1 {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -56,6 +56,12 @@ body {
 .main-width {
     width: 1170px;
     margin: auto;
+}
+.title i,.title span,.title h1 {
+    color: #102638;
+    line-height: 1.1;    
+    font-family: PTItalic;
+    font-size: 36px;
 }
 /*-----------------------------------END GLOBAL&THEME STYLES-----------------------------------*/
 /*-----------------------------------FLEXBOX STYLES-----------------------------------*/
@@ -79,7 +85,7 @@ body {
 }
 .justify-space-between {
     justify-content: space-between;
-}
+}repeat
 .direction-row {
     flex-direction: row;
 }
@@ -122,6 +128,10 @@ body {
 }
 .float-left {
     float: left;
+}
+.absolute-top {
+    position: absolute;
+    top:0;
 }
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
@@ -357,3 +367,11 @@ footer div  {
     background-image: url("../images/recetario/veracruzano/thumb.png" );
 }
 /*-----------------------------------END RECETARIO.HTML STYLES-----------------------------------*/
+/*-----------------------------------CONTACTO.HTML STYLES-----------------------------------*/
+.contact-title {
+    height: 300px;
+    background-image: url("../images/banner-contacto-md2.jpg");
+    width: 100%;
+    line-height: 0px;
+}
+/*-----------------------------------END CONTACTO.HTML STYLES-----------------------------------*/
