@@ -53,7 +53,10 @@ body {
     width: 1170px;
     margin: auto;
 }
-
+.main-width {
+    width: 1170px;
+    margin: auto;
+}
 /*-----------------------------------END GLOBAL&THEME STYLES-----------------------------------*/
 /*-----------------------------------FLEXBOX STYLES-----------------------------------*/
 .flex-container {
@@ -142,11 +145,9 @@ body {
     background: #f8f8f8;
     text-transform: uppercase;
 }
-
 .header #menu div:nth-child(3) a{
     border-left: 1px solid #102638;
 }
-
 .header a, .header p, .header span {
     color: #102638;
     font-size: 12px;
@@ -311,12 +312,6 @@ footer div  {
     margin-bottom: 40px;
     line-height: 160%;
 }
-.recipe-book-container {
-    height: 1300px;
-}
-.recipe-book-container {
-    height: 1300px;
-}
 .recipe-book-title i {
     color: #102638;
 }
@@ -324,9 +319,12 @@ footer div  {
     padding: 18px;
 }
 .recipe-book-field {
-    width: 450px;
+    height: 672px;
 }
-.recipe-book-item-image {
+.recipe-book-field-tiny {
+    height: 400px;
+}
+.recipe-book-item-image , .recipe-book-item-image-tiny {
     width: 100%;
     height: 100%;
     max-height: 480px;
@@ -334,10 +332,28 @@ footer div  {
     border-bottom: 10px solid #e9212d;
     border-radius: 3px;
 }
-.recipe-book-sinaloense {
-    background-image: url("../images/recetario/sinaloense/thumb.png" );
+.recipe-book-item-image-tiny {
+    max-height: 240px;
 }
 .recipe-book-baja-california {
     background-image: url("../images/recetario/baja-california/thumb.png" );
+}
+.recipe-book-sinaloense {
+    background-image: url("../images/recetario/sinaloense/thumb.png" );
+}
+.recipe-book-chiapaneco {
+    background-image: url("../images/recetario/chiapaneco/thumb.png" );
+}
+.recipe-book-yucateco {
+    background-image: url("../images/recetario/yucateco/thumb.png" );
+}
+.recipe-book-tabasqueno {
+    background-image: url("../images/recetario/tabasqueno/thumb.png" );
+}
+.recipe-book-norteno {
+    background-image: url("../images/recetario/norteno/thumb.png" );
+}
+.recipe-book-veracruzano {
+    background-image: url("../images/recetario/veracruzano/thumb.png" );
 }
 /*-----------------------------------END RECETARIO.HTML STYLES-----------------------------------*/
