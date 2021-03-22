@@ -661,15 +661,34 @@ footer div  {
     height: 380px;
 }
 
+#banner-products-category.banner-potato-line {
+    background-image: url("../images/productos/156005c_817.jpg" );
+    height: 380px;
+}
+
+#banner-products-category.banner-corn-line {
+    background-image: url("../images/productos/4a8c9bb_6ba.jpg" );
+    height: 380px;
+}
+
 .product {
     margin-bottom: 50px;
     width:25%;
     padding: 15px;
 }
 
+.product i {
+    font-weight: normal;
+}
+
 .product a {
     display: block;
     outline: 0;
+}
+
+.product a:hover {
+    color: #23527c;
+    text-decoration: underline;
 }
 
 .product figure {
