@@ -172,6 +172,10 @@ ol.breadcrumb {
 .text-right {
     text-align: right;
 }
+.text-center{
+    text-align: center;
+}
+
 .flex-grow-1 {
     flex-grow: 1;
 }
@@ -907,3 +911,7 @@ footer div  {
 }
 /*-----------------------------------END FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
 
+.product-detail .product-image{
+    padding: 0;
+    margin: 0;
+}
