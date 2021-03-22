@@ -62,9 +62,9 @@
     <div class="flex-container justify-center align-center gen-nav-menu">
         <div class="br-blue"><a href="#inicio">Inicio</a></div>
         <div class="br-blue"><a href="#facil-y-rapido">Es fácil y rápido</a></div>
-        <div class="br-blue"><a href="#inicio">¿Cuánto le gano a las frituras?</a></div>
-        <div class="br-blue"><a href="#inicio">Preguntas Frecuentes</a></div>
-        <div><a href="#inicio">Participación en Exposiciones Anuales</a></div>
+        <div class="br-blue"><a href="#how-much-do-i-earn">¿Cuánto le gano a las frituras?</a></div>
+        <div class="br-blue"><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></div>
+        <div><a href="#expo">Participación en Exposiciones Anuales</a></div>
     </div>
     <div class="flex-container direction-column itsmb-tutorial" id="facil-y-rapido">
         <div class="flex-container direction-column justify-center align-center w-full mb-30">
@@ -92,7 +92,7 @@
             </div>
         </div>
     </div>
-    <div class="flex-container direction-column itsmb-product-area main-width bb-blue">
+    <div class="flex-container direction-column itsmb-product-area main-width bb-blue" id="how-much-do-i-earn">
         <div class="flex-container direction-column justify-center align-center w-full mb-30">
             <div class="item-title-red"><i><h3>Ejemplo para 1kg de pasta Palmex</h3></i></div>
             <div><i><h4>Figura de Trigo!</h4></i></div>
@@ -187,7 +187,7 @@
         </div>
     </div>
     <div class="flex-container frequent-questions-container">
-        <div class="title-15 color-red pb-150 main-width"><h1><i><a href="#">Ir a Preguntas Frecuentes</a></i></h1></div>
+        <div class="title-15 color-red pb-150 main-width"><h1><i><a href="preguntas-frecuentes.html">Ir a Preguntas Frecuentes</a></i></h1></div>
     </div>
     <div class="flex-container direction-column justify-center align-center itsmb-product-catalog p-60 ">
         <div class="flex-container direction-column justify-center align-center w-full mb-30 main-width">
@@ -196,11 +196,74 @@
             <img src="images/durito-globe.png" height="525" width="1151" alt="Durito Palmex" >
         </div>
     </div>
-    <div class="flex-container direction-column justify-center align-center bg-color-blue p-60 ">
+    <div class="flex-container direction-column justify-center align-center bg-color-blue p-60" id="expo">
         <div class="flex-container direction-column justify-center align-center w-full mb-30 main-width">
             <div class="item-title-red"><i><h2>Participación en Exposiciones Anuales</h2></i></div>
         </div>
-    </div>    
+        <div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/partic4.jpg" class="slider-container-image">
+                    <div class="text">CONFITEXPO 2015</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/partic6.jpg" class="slider-container-image">
+                    <div class="text">SNAXPO 2015</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/partic7.jpg"  class="slider-container-image">
+                    <div class="text">CONFITEXPO 2015</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Expo-Fispal.jpg" class="slider-container-image">
+                    <div class="text">FISPAL 2015</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        setInterval(()=>{
+        plusSlides(1);
+        }, 8000);
+    </script>
     <div class="flex-container direction-column main-width p-60">
         <div class="w-full">
             <div class="item-title-red itsmb-pan-style"><i><h3>¿Necesitas más información?</h3></i></div>
