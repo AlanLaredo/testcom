@@ -147,6 +147,9 @@ body {
 .color-red {
     color: #e9212d;
 }
+.color-gray, .color-gray a {
+    color: gray;
+}
 /*  OPACITY  */
 .opacity-4 {
     opacity: .4;
@@ -166,6 +169,12 @@ body {
 }
 .p-8 {
     padding: 8px;
+}
+.p-30 {
+    padding: 30px;
+}
+.p-60 {
+    padding: 60px;
 }
 .pl-60 {
     padding-left: 60px;
@@ -189,8 +198,20 @@ body {
 .w-100 {
     width: 100%;
 }
+.wpx-450 {
+    width: 450px;
+}
 .h-150 {
     height: 150px !important;
+}
+.list-style-none, .list-style-none ul {
+   list-style-type: none;
+}
+.line-height-2 {
+    line-height: 2;
+}
+.line-height-3 {
+    line-height: 3;
 }
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
@@ -434,6 +455,31 @@ footer div  {
 .recipe-book-veracruzano {
     background-image: url("../images/recetario/veracruzano/thumb.png" );
 }
+.recipe-book-image {
+    height: 800px;
+    width: 100%;
+}
+.recipe-book-detail-chiapaneco {
+    background-image: url("../images/recetario/chiapaneco/1.jpg" );
+}
+.recipe-book-detail-sinaloense {
+    background-image: url("../images/recetario/sinaloense/1.jpg" );
+}
+.recipe-book-detail-yucateco {
+    background-image: url("../images/recetario/yucateco/1.jpg" );
+}
+.recipe-book-detail-baja-california {
+    background-image: url("../images/recetario/baja-california/1.jpg" );
+}
+.recipe-book-detail-tabasqueno {
+    background-image: url("../images/recetario/tabasqueno/1.jpg" );
+}
+.recipe-book-detail-norteno {
+    background-image: url("../images/recetario/norteno/1.jpg" );
+}
+.recipe-book-detail-veracruzano {
+    background-image: url("../images/recetario/veracruzano/1.jpg" );
+}
 /*-----------------------------------END RECETARIO.HTML STYLES-----------------------------------*/
 /*-----------------------------------PRODUCT CATALOG.HTML STYLES-----------------------------------*/
 .product-catalog {
@@ -552,7 +598,6 @@ footer div  {
 }
 .contact-vta-item ul {
    list-style-type: none;
-
 }
 /*-----------------------------------END CONTACTO.HTML STYLES-----------------------------------*/
 /*-----------------------------------JOB.HTML STYLES-----------------------------------*/
