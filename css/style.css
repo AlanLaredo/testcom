@@ -40,6 +40,11 @@ body {
     padding: 0;
     font-family: PTBoldItalic;
 }
+.item-title-white, .item-title-white i , .item-title-white h2, .item-title-white a {
+    color: white;
+    padding: 0;
+    font-family: PTBoldItalic;
+}
 .title-15 {
     font-size: 15px;
 }
@@ -183,7 +188,10 @@ ol.breadcrumb {
 /*-----------------------------------END FLEXBOX STYLES-----------------------------------*/
 /*-----------------------------------GENERAL STYLES-----------------------------------*/
 /*  COLORS  */
-.color-red {
+.color-white, .color-white a {
+    color: white;
+}
+.color-red, .color-red a {
     color: #e9212d;
 }
 .color-gray, .color-gray a {
@@ -191,6 +199,9 @@ ol.breadcrumb {
 }
 .color-blue {
     color: #102638;
+}
+.bg-color-blue {
+    background-color: #102639;
 }
 /*  OPACITY  */
 .opacity-4 {
@@ -236,6 +247,12 @@ ol.breadcrumb {
 .mb-100 {
     margin-bottom: 100px;
 }
+.lh-2 {
+    line-height: 2;
+}
+.lh-3 {
+    line-height: 3;
+}
 .button {
     margin-top:  15px;
     background: #e9212d;
@@ -245,6 +262,9 @@ ol.breadcrumb {
     padding: 15px;
     border: 0px;
     border-radius: 2px; 
+}
+.w-750 {
+    width: 750px;
 }
 .w-full {
     width: 100%;
@@ -270,11 +290,14 @@ ol.breadcrumb {
 .br-blue {
     border-right: 1px solid #102638;
 }
-.bl-blue {
-    border-left: 1px solid #102638;
-}
 .br-white {
     border-right: 1px solid white;
+}
+.bb-blue {
+    border-bottom: 1px solid #102638;
+}
+.bl-blue {
+    border-left: 1px solid #102638;
 }
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
@@ -416,9 +439,10 @@ footer div  {
     font-family: PTBoldItalic;
 }
 
-.index-menu-option-title a{
+.index-menu-option-title a {
     width: 100%;
     height: 100%;
+    color: white;
 }
 
 .index-menu-option-title a:hover {
@@ -871,4 +895,15 @@ footer div  {
 .itsmb-product-quantityes small {
     font-size: 19px;
 }
+.itsmb-product-catalog {
+    background: linear-gradient(to bottom,#e3391f 0,#e75b22 100%);
+}
 /*-----------------------------------ITSMB JOB.HTML STYLES-----------------------------------*/
+/*-----------------------------------FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
+.frequent-questions-container {
+    height: 540px;
+    padding: 250px 0 300px;
+    background: url(../images/banner-faq.jpg) center top/cover no-repeat #d2ccc7;
+}
+/*-----------------------------------END FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
+
