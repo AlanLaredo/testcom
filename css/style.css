@@ -53,6 +53,34 @@ body {
     width: 1170px;
     margin: auto;
 }
+
+.main-option-title {
+    flex: 0 0 25vw;
+}
+
+.main-option-title span {
+    padding: 3px 5px;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: PTBoldItalic;
+}
+
+.wheat-color {
+    background: rgba(206,33,58, 1);
+}
+
+.potato-color {
+    background: rgba(38,63,84, 1);
+}
+
+.corn-color {
+    background-color: rgba(82,135,70, 1);
+}
+
+.suncereal-color {
+    background-color: rgba(62,64,64, 1);
+}
+
 .main-width {
     width: 1170px;
     margin: auto;
@@ -100,6 +128,9 @@ body {
 }
 .text-justify {
     text-align: justify;
+}
+.text-right {
+    text-align: right;
 }
 .flex-grow-1 {
     flex-grow: 1;
@@ -169,6 +200,15 @@ body {
 .header, footer, article, nav, aside {
     padding: 1em;
 }
+
+header a.selected {
+    color: #e9212d;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
 .header-phone {
     color: #102638;
     font-size: 12px;
@@ -367,6 +407,76 @@ footer div  {
     background-image: url("../images/recetario/veracruzano/thumb.png" );
 }
 /*-----------------------------------END RECETARIO.HTML STYLES-----------------------------------*/
+/*-----------------------------------PRODUCT CATALOG.HTML STYLES-----------------------------------*/
+.product-catalog {
+    border-top: 10px solid #e5e5e5;
+}
+
+.product-catalog .navigation-menu {
+    min-height: 842.750px;
+}
+.effect-test:hover {
+    background-size: 540px;
+    transition: 2s;
+}
+.product-catalog h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.product-catalog .main-option-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-catalog .main-option-title figure {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.product-catalog .main-option-title:hover figure { 
+    transform: scale(1.1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+
+.product-catalog .main-option-title img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-catalog .main-option-title span{
+    position: absolute;
+    color: #fff;
+    padding: 2px 30px;
+}
+
+.wheat-line:hover {
+    background: linear-gradient(rgba(206,33,58, .68),rgba(206,33,58,.68));
+}
+
+.potato-line:hover {
+    background: linear-gradient(rgba(38,63,84, .68), rgba(38,63,84, .68));
+}
+
+.corn-line:hover {
+    background: linear-gradient(rgba(82,135,70, .68), rgba(82,135,70, .68));
+}
+
+.suncereal:hover {
+    background: linear-gradient(rgba(62,64,64, .68), rgba(62,64,64, .68));
+    /*-webkit-transition: all .3s;
+    opacity: 1;
+    transform: scale(1.1);
+    width: 100%;
+    overflow: hidden;*/
+}
+/*-----------------------------------END CATALOG.HTML STYLES-----------------------------------*/
 /*-----------------------------------CONTACTO.HTML STYLES-----------------------------------*/
 .contact-title {
     height: 300px;
