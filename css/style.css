@@ -164,6 +164,25 @@ body {
     position: absolute;
     top:0;
 }
+.p-8 {
+    padding: 8px;
+}
+.m-20 {
+    margin: 20px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.button {
+    margin-top:  15px;
+    background: #e9212d;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 0px;
+    border-radius: 2px; 
+}
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
 .dev-br {
@@ -488,6 +507,41 @@ footer div  {
     font-size: 14px;
     font-weight: 700;
     color: #5c5c5c;
-   list-style-type: none; 
+    list-style-type: none;
+    width: 100%;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-element {
+    padding: 10px;
+    width: 100%;
+}
+.form-element input {
+    background-color: #f0f0f0;
+    height: 60;
+    border-radius: 2px;
+}
+.contact-vta-item {
+    width: 390px;
+}
+.contact-vta-item ul {
+   list-style-type: none;
+
 }
 /*-----------------------------------END CONTACTO.HTML STYLES-----------------------------------*/
