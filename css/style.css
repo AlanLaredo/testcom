@@ -40,6 +40,12 @@ body {
     padding: 0;
     font-family: PTBoldItalic;
 }
+.title-15 {
+    font-size: 15px;
+}
+.title-32 {
+    font-size: 32px;
+}
 .item-content, .item-content p, .item-content i, .item-content h1 {
     display: block;
     margin-block-start: 1em;
@@ -183,6 +189,9 @@ ol.breadcrumb {
 .color-gray, .color-gray a {
     color: gray;
 }
+.color-blue {
+    color: #102638;
+}
 /*  OPACITY  */
 .opacity-4 {
     opacity: .4;
@@ -208,6 +217,9 @@ ol.breadcrumb {
 }
 .p-60 {
     padding: 60px;
+}
+.pb-150 {
+    padding-bottom: 150px;
 }
 .pl-60 {
     padding-left: 60px;
@@ -824,5 +836,20 @@ footer div  {
 .itsmb-pan-style {
     height: 84px;
 }
-
+.itsmb-product-area {
+    height: 750px;
+}
+.itsmb-product-quantityes {
+    width: 150px;
+    text-align: center;
+    color: #7d7d7d;
+    line-height: 60%;
+    font-size: 30px;
+    font-family: PTItalic;
+    margin: 0;
+    padding: 0;
+}
+.itsmb-product-quantityes small {
+    font-size: 19px;
+}
 /*-----------------------------------ITSMB JOB.HTML STYLES-----------------------------------*/
