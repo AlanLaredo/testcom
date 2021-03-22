@@ -167,6 +167,10 @@ ol.breadcrumb {
 .text-right {
     text-align: right;
 }
+.text-center{
+    text-align: center;
+}
+
 .flex-grow-1 {
     flex-grow: 1;
 }
@@ -872,3 +876,7 @@ footer div  {
     font-size: 19px;
 }
 /*-----------------------------------ITSMB JOB.HTML STYLES-----------------------------------*/
+.product-detail .product-image{
+    padding: 0;
+    margin: 0;
+}
