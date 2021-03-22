@@ -135,7 +135,9 @@ ol.breadcrumb {
 .flex-container {
     display: flex;
 }
-
+.align-start {
+    align-items: flex-start;
+}
 .align-center {
     align-items: center;
 }
@@ -144,6 +146,9 @@ ol.breadcrumb {
 }
 .align-stretch {
     align-items: stretch;
+}
+.justify-start {
+    justify-content: flex-start;
 }
 .justify-center {
     justify-content: center;
@@ -207,6 +212,12 @@ ol.breadcrumb {
 .bg-color-blue {
     background-color: #102639;
 }
+.bg-color-orange {
+    background-color: #e3391f;
+}
+.bg-color-green {
+    background-color: #18a552;
+}
 /*  OPACITY  */
 .opacity-4 {
     opacity: .4;
@@ -267,6 +278,9 @@ ol.breadcrumb {
     border: 0px;
     border-radius: 2px; 
 }
+.w-260 {
+    width: 260px;
+}
 .w-750 {
     width: 750px;
 }
@@ -281,6 +295,12 @@ ol.breadcrumb {
 }
 .h-150 {
     height: 150px !important;
+}
+.h-450 {
+    height: 450px;
+}
+.h-600 {
+    height: 600px;
 }
 .list-style-none, .list-style-none ul {
    list-style-type: none;
@@ -983,3 +1003,12 @@ footer div  {
   .prev, .next,.text {font-size: 11px}
 }
 /*-----------------------------------END SLIDER STYLES-----------------------------------*/
+/*-----------------------------------IM FRYER STYLES-----------------------------------*/
+.im-fryer-title {
+    background-image: url("../images/banner-freidor-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+/*-----------------------------------END IM FRYER STYLES-----------------------------------*/
+
