@@ -19,15 +19,15 @@
     <meta property="og:locale" content="es_MX">
 </head>
 <body>
-    <header class="header flex-container justify-space-between align-center">
-        <div class="flex-container ">
+    <header class="container header flex-container justify-space-between align-center">
+        <div class="flex-container">
             <div class="logo">
-                <a href="." title="Palmex">
+                <a href="" title="Palmex">
                     <img src="images/palmex-logo.png" alt="Palmex" height="97" width="170">
                 </a>
             </div>
         </div>
-        <div class="flex-container">
+        <div class="flex-container" id="menu">
             <div>
                 <b><a href="categorias-productos.html">Catálogo de productos</a></b>
             </div>
@@ -40,12 +40,10 @@
             <div>
                 <b><a href="contacto.html">Contacto</a></b>
             </div>
-            <div class="header-phone">
+            <div class="header-phone flex-container align-center">
                 <a href="tel:8004725639">
                     <img src="images/i-phone.svg" height="16" width="16" alt="Teléfono" aria-hidden="true">
                 </a>
-            </div>
-            <div class="header-phone">
                 <span>01-800-472-5639</span>
             </div>
             <div>
@@ -53,21 +51,21 @@
             </div>
         </div>
     </header>
-    <div class="flex-container justify-center">
+    <div class="flex-container justify-center main-width">
         <div class="recipe-book-title">
             <i>Descubre deliciosos y prácticos platillos con el toque especial de nuestros productos.</i>
         </div>
     </div>
-    <div class="flex-container recipe-book-container justify-center">
+    <div class="flex-container recipe-book-container justify-center main-width">
         <div class="recipe-book-column">
-            <div>
+            <div class="recipe-book-field">
                 <div class="recipe-book-sinaloense recipe-book-item-image bg-img">
                     <a class="a-expand" href="sinaloense.html"></a>
                 </div>
                 <div class="item-title-red"><h2><i>Sinaloense</i></h2></div>
                 <div class="item-content"><p>Salchicha, dulce de tamarindo picoso, gotas de coctel de tomate, salsa La Botanera® y chamoy.</p></div>
             </div>
-            <div class="dev-br">
+            <div class="recipe-book-field">
                 <div class="recipe-book-baja-california recipe-book-item-image bg-img">
                     <a class="a-expand" href="baja-california.html"></a>
                 </div>
@@ -76,79 +74,112 @@
             </div>
         </div>
         <div class="recipe-book-column">
-            <div class="recipe-book-item dev-bb">1</div>
-            <div class="recipe-book-item dev-br">2</div>
-            <div class="recipe-book-item dev-bb">3</div>
+            <div class="recipe-book-field recipe-book-field-tiny">
+                <div class="recipe-book-chiapaneco recipe-book-item-image-tiny bg-img">
+                    <a class="a-expand" href="chiapaneco.html"></a>
+                </div>
+                <div class="item-title-red"><h2><i>Chiapaneco</i></h2></div>
+                <div class="item-content"><p>Mayonesa, queso, salsa La Botanera®, algunos le ponen granos de elote y zanahoria rayada.</p></div>
+            </div>
+            <div class="recipe-book-field recipe-book-field-tiny">
+                <div class="recipe-book-yucateco recipe-book-item-image-tiny bg-img">
+                    <a class="a-expand" href="yucateco.html"></a>
+                </div>
+                <div class="item-title-red"><h2><i>Yucateco</i></h2></div>
+                <div class="item-content"><p>Aderezo de Mayonesa o media crema, lechuga romanita, queso sopero y la salsa La Botanera®.</p></div>
+            </div>
+            <div class="recipe-book-field recipe-book-field-tiny">
+                <div class="recipe-book-tabasqueno recipe-book-item-image-tiny bg-img">
+                    <a class="a-expand" href="tabasqueno.html"></a>
+                </div>
+                <div class="item-title-red"><h2><i>Tabasqueño</i></h2></div>
+                <div class="item-content"><p>Mayonesa, queso para desmoronar y salsa La Botanera®.</p></div>
+            </div>
         </div>
         <div class="recipe-book-column">
-            <div class="recipe-book-item dev-br">1</div>
-            <div class="recipe-book-item dev-bb">2</div>
-        </div>
-    </div>
-    <footer class="flex-container">
-        <div class="footer-logo">
-            <a href="." title="Palmex">
-                <img src="images/palmex-logo-2.png" alt="Palmex" height="97" width="170">
-            </a>
-        </div>
-        <div class="direction-column">
-            <div class="flex-container">
-                <div>
-                    <ul>
-                        <li class="color-red">Planta Monterrey</li>
-                        <li>+52 (81) 8151-3150</li>
-                        <li>Av. Francisco I. Madero # 145</li>
-                        <li>El Lechugal, Santa Catarina, N.L.</li>
-                        <li>C.P. 66376</li>
-                        <li>ventas@palmex.com</li>
-                    </ul>
+            <div class="recipe-book-field">
+                <div class="recipe-book-norteno recipe-book-item-image bg-img">
+                    <a class="a-expand" href="norteno.html"></a>
                 </div>
-                <div>
-                    <ul>
-                        <li class="color-red">México</li>
-                        <li>+52 (81) 8151-3150</li>
-                        <li>ventas@palmex.com</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li class="color-red">Sudamérica y Centroamérica</li>
-                        <li>+52 01 (81) 8151-3150</li>
-                        <li>ventas@palmex.com</li>
-                    </ul>
-                </div>
+                <div class="item-title-red"><h2><i>Norteño</i></h2></div>
+                <div class="item-content"><p>Frijoles, repollo, crema, queso amarillo, queso para desmoronar y salsa La Botanera®.</p></div>
             </div>
-            <div class="flex-container">                
-                <div>
-                    <ul>
-                        <li class="color-red">Planta Puebla</li>
-                        <li>+52 (222) 309-2170</li>
-                        <li>Ricardo Flores Magón #98-15</li>
-                        <li>San Jerónimo Caleras, Puebla, Puebla</li>
-                        <li>C.P. 72100</li>
-                        <li>ventas@palmex.com</li>
-                    </ul>
+            <div class="recipe-book-field">
+                <div class="recipe-book-veracruzano recipe-book-item-image bg-img">
+                    <a class="a-expand" href="veracruzano.html"></a>
                 </div>
-                <div >
-                    <ul>
-                        <li class="color-red">Norteamérica</li>
-                        <li>+1 (877) 816-3940</li>
-                        <li>ventas@palmex.com</li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="footer-raise-your-voice">
-                        <a href="https://orienta-ld.com/PALMEX/vst_home.php" target="_blank" style="display:block; padding:5px; border-radius:5px; background-color:#FFF; ">
-                            <img src="./images/levantalavoz.png" class="img-responsive" alt="Levanta la Voz">
-                        </a>
+                <div class="item-title-red"><h2><i>Veracruzano</i></h2></div>
+                <div class="item-content"><p>Crema vegetal o mayonesa en todo el 10x10, queso fresco, salsa La Botanera®, un poco de limón y elote desgranado.</p></div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container flex-container">
+            <div class="footer-logo">
+                <a href="." title="Palmex">
+                    <img src="images/palmex-logo-2.png" alt="Palmex" height="97" width="170">
+                </a>
+            </div>
+            <div class="direction-column">
+                <div class="flex-container">
+                    <div>
+                        <ul>
+                            <li class="color-red">Planta Monterrey</li>
+                            <li>+52 (81) 8151-3150</li>
+                            <li>Av. Francisco I. Madero # 145</li>
+                            <li>El Lechugal, Santa Catarina, N.L.</li>
+                            <li>C.P. 66376</li>
+                            <li>ventas@palmex.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="color-red">México</li>
+                            <li>+52 (81) 8151-3150</li>
+                            <li>ventas@palmex.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="color-red">Sudamérica y Centroamérica</li>
+                            <li>+52 01 (81) 8151-3150</li>
+                            <li>ventas@palmex.com</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="flex-container justify-end">
-                <ul>
-                    <li class="color-red opacity-6">Política de privacidad</li>
-                    <li class="color-red opacity-6">Código de Ética PALMEX</li>
-                </ul>
+                <div class="flex-container">                
+                    <div>
+                        <ul>
+                            <li class="color-red">Planta Puebla</li>
+                            <li>+52 (222) 309-2170</li>
+                            <li>Ricardo Flores Magón #98-15</li>
+                            <li>San Jerónimo Caleras, Puebla, Puebla</li>
+                            <li>C.P. 72100</li>
+                            <li>ventas@palmex.com</li>
+                        </ul>
+                    </div>
+                    <div >
+                        <ul>
+                            <li class="color-red">Norteamérica</li>
+                            <li>+1 (877) 816-3940</li>
+                            <li>ventas@palmex.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="footer-raise-your-voice">
+                            <a href="https://orienta-ld.com/PALMEX/vst_home.php" target="_blank" style="display:block; padding:5px; border-radius:5px; background-color:#FFF; ">
+                                <img src="./images/levantalavoz.png" class="img-responsive" alt="Levanta la Voz">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container justify-end ">
+                    <ul class="text-right">
+                        <li class="color-red opacity-6">Política de privacidad</li>
+                        <li class="color-red opacity-6">Código de Ética PALMEX</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
