@@ -2,7 +2,6 @@
 @import url(fonts.css?family=Noto+Sans:400,700,400italic);
 * {
     box-sizing: border-box;
-    color: white;
     text-decoration: none; 
 }
 html {
@@ -35,9 +34,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-.item-title-red, .item-title-red i {
+.item-title-red, .item-title-red i , .item-title-red h2 {
     color: #e9212d;
-    font-size: 18px;
+    font-size: 24px;
+    padding: 0;
     font-family: PTBoldItalic;
 }
 .item-content, .item-content p, .item-content i, .item-content h1 {
@@ -373,5 +373,11 @@ footer div  {
     background-image: url("../images/banner-contacto-md2.jpg");
     width: 100%;
     line-height: 0px;
+}
+.contact-item, .contact-item ul > li, .contact-item ul {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5c5c5c;
+   list-style-type: none; 
 }
 /*-----------------------------------END CONTACTO.HTML STYLES-----------------------------------*/
