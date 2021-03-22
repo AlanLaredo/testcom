@@ -179,8 +179,14 @@ body {
 .pl-60 {
     padding-left: 60px;
 }
+.pt-50 {
+    padding-top: 50px;
+}
 .m-20 {
     margin: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
 }
 .mb-100 {
     margin-bottom: 100px;
@@ -195,8 +201,11 @@ body {
     border: 0px;
     border-radius: 2px; 
 }
-.w-100 {
+.w-full {
     width: 100%;
+}
+.h-full {
+    height: 100%;
 }
 .wpx-450 {
     width: 450px;
@@ -212,6 +221,15 @@ body {
 }
 .line-height-3 {
     line-height: 3;
+}
+.br-blue {
+    border-right: 1px solid #102638;
+}
+.bl-blue {
+    border-left: 1px solid #102638;
+}
+.br-white {
+    border-right: 1px solid white;
 }
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
@@ -603,7 +621,7 @@ footer div  {
 /*-----------------------------------JOB.HTML STYLES-----------------------------------*/
 .job-background {
     height: 600px;
-border: 1px solid red;
+    border: 1px solid red;
     background-image: url("../images/persona-bolsa-trabajo.png");
     width: 200px;
     line-height: 0px;
@@ -611,3 +629,33 @@ border: 1px solid red;
     background-size: contain;
 }
 /*-----------------------------------END JOB.HTML STYLES-----------------------------------*/
+/*-----------------------------------ITSMB.HTML STYLES-----------------------------------*/
+.itsmb-title {
+    background-image: url("../images/banner-negocio-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+.gen-nav-menu {
+    height: 60px;
+    background: #e4e4e4;
+}
+.gen-nav-menu a {
+    color: #102638;
+}
+.gen-nav-menu div {
+    /* margin: 0 10px 0 10px; */
+    padding: 0 20px 0 20px;
+}
+.itsmb-tutorial {
+    background: url(../images/back-prin-inter.jpg) center top/cover no-repeat #102638;
+    color: #fff;
+    height: 540px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.itsmb-pan-style {
+    height: 84px;
+}
+
+/*-----------------------------------ITSMB JOB.HTML STYLES-----------------------------------*/
