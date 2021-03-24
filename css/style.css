@@ -1006,6 +1006,14 @@ footer div  {
     padding: 250px 0 300px;
     background: url(../images/banner-faq.jpg) center top/cover no-repeat #d2ccc7;
 }
+.frequent-questions-question {
+    color: #e5e5e5;
+    font-size: 20px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
 /*-----------------------------------END FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
 
 .product-detail .product-image{
