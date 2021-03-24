@@ -156,6 +156,9 @@ ol.breadcrumb {
 .justify-end {
     justify-content: flex-end;
 }
+.justify-space-around {
+    justify-content: space-around;
+}
 .justify-space-between {
     justify-content: space-between;
 }
@@ -197,7 +200,7 @@ ol.breadcrumb {
 /*-----------------------------------END FLEXBOX STYLES-----------------------------------*/
 /*-----------------------------------GENERAL STYLES-----------------------------------*/
 /*  COLORS  */
-.color-white, .color-white a {
+.color-white, .color-white a, .color-white i, .color-white h1 {
     color: white;
 }
 .color-red, .color-red a {
@@ -206,11 +209,14 @@ ol.breadcrumb {
 .color-gray, .color-gray a {
     color: gray;
 }
+.color-blue {
+    color: #102638;
+}
 .bg-color-bluelight {
     background: #2d3f4d;
 }
-.color-blue {
-    color: #102638;
+.bg-color-red {
+    background-color: #e9212d;
 }
 .bg-color-blue {
     background-color: #102639;
@@ -238,14 +244,23 @@ ol.breadcrumb {
     position: absolute;
     top:0;
 }
+.p-3 {
+    padding: 3px;
+}
 .p-8 {
     padding: 8px;
+}
+.p-10 {
+    padding: 10px;
 }
 .p-30 {
     padding: 30px;
 }
 .p-60 {
     padding: 60px;
+}
+.pb-50 {
+    padding-bottom: 50px;
 }
 .pb-150 {
     padding-bottom: 150px;
@@ -255,6 +270,9 @@ ol.breadcrumb {
 }
 .pt-50 {
     padding-top: 50px;
+}
+.mt-20 {
+    margin-top: 20px;
 }
 .mt-30 {
     margin-top: 30px;
@@ -287,6 +305,9 @@ ol.breadcrumb {
 .w-260 {
     width: 260px;
 }
+.w-450 {
+    width: 450px;
+}
 .w-750 {
     width: 750px;
 }
@@ -295,6 +316,9 @@ ol.breadcrumb {
 }
 .h-full {
     height: 100%;
+}
+.h-100vh {
+    height:100vh;
 }
 .wpx-450 {
     width: 450px;
@@ -305,8 +329,17 @@ ol.breadcrumb {
 .h-450 {
     height: 450px;
 }
+.h-500 {
+    height: 500px;
+}
 .h-600 {
     height: 600px;
+}
+.h-800 {
+    height: 800px;    
+}
+.h-950 {
+    height: 950px;    
 }
 .list-style-none, .list-style-none ul {
    list-style-type: none;
@@ -323,11 +356,42 @@ ol.breadcrumb {
 .br-white {
     border-right: 1px solid white;
 }
+.bb-white {
+    border-bottom: 1px solid white;
+}
 .bb-blue {
     border-bottom: 1px solid #102638;
 }
 .bl-blue {
     border-left: 1px solid #102638;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.hover-red-border-10:hover {
+    border: 10px solid #e9212d;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.mix-blend-multiply, .mix-blend-multiply img {
+    mix-blend-mode: multiply;
+}
+.red-circle {
+    background: #e9212d;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+.bluelight-circle {
+    background: #91b9d2;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
 }
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
@@ -1019,13 +1083,58 @@ footer div  {
     width: 100%;
     line-height: 0px;
 }
-.im-a-fryer-another-sites {
-  
- 
-}
 .im-a-fryer-another-sites img {
     border-bottom: 10px solid #e9212d;
 }
    
 /*-----------------------------------END IM FRYER STYLES-----------------------------------*/
+/*-----------------------------------IM WHOLESALER STYLES-----------------------------------*/
+.im-wholesaler-title {
+    background-image: url("../images/banner-mayorista-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+.im-wholesaler-service {
+    background: url(../images/botana-anillos.jpg) center top/cover no-repeat #e9212d;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 550px;
+}
+.im-wholesaler-service-color {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #e9212d;
+    opacity: .8;
+    -webkit-transform: skew(
+40deg
+) translateX(-30%);
+    -moz-transform: skew(40deg) translateX(-30%);
+    -o-transform: skew(40deg) translateX(-30%);
+    transform: skew(
+40deg
+) translateX(-30%);
+}
+.im-wholesale-anothers-title {
+    height: 67px;
+    width: 350px;
+    position: absolute;
+    text-align: center;
+    border-radius: 4px;
+}
+/*-----------------------------------END IM AN INDUSTRIAL STYLES-----------------------------------*/
+/*-----------------------------------IM IM AN INDUSTRIAL STYLES-----------------------------------*/
+.i-am-an-industrial-snack-maker-title {
+    background-image: url("../images/banner-fabricante-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
 
+.i-am-an-industrial-snack-maker-international {
+    background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0, #c3e3f7 100%),
+    url(../images/back-paises.png) ;
+}
+/*-----------------------------------END IM A INDUSTRIAL STYLES-----------------------------------*/
