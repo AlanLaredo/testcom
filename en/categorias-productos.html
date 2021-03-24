@@ -1,9 +1,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-    <title>
-Recipe book- Veracruzano</title>
-    <meta property="og:title" content="Recetario - Veracruzano">
+    <title>Home - Palmex</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 	<link rel="apple-touch-icon icon" href="../images/phone.png">
 	<link rel="apple-touch-icon icon" sizes="72x72" href="../images/tablet.png">
@@ -13,6 +11,7 @@ Recipe book- Veracruzano</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="HandheldFriendly" content="True">
     <meta name="description" content="Palmex, somos una empresa del ramo alimenticio, producimos diferentes formas de pasta seca con base en harinas de trigo, papa y maíz.">
+    <meta property="og:title" content="Home - Palmex">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Palmex">
     <meta property="og:description" content="Palmex, somos una empresa del ramo alimenticio, producimos diferentes formas de pasta seca con base en harinas de trigo, papa y maíz.">
@@ -20,64 +19,88 @@ Recipe book- Veracruzano</title>
     <meta property="og:locale" content="es_MX">
 </head>
 <body>
-    <header class="container header flex-container justify-space-between align-center">
-        <div class="flex-container ">
-            <div class="logo">
-                <a href="index.html" title="Palmex">
-                    <img src="../images/palmex-logo.png" alt="Palmex" height="97" width="170">
-                </a>
+    <header class="header">
+        <div class="flex-container justify-space-between align-center container">
+            <div class="flex-container ">
+                <div class="logo">
+                    <a href="index.html" title="Palmex">
+                        <img src="../images/palmex-logo.png" alt="Palmex" height="97" width="170">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="flex-container" id="menu">
-            <div>
-                <b><a href="categorias-productos.html">Product Catalog</a></b>
-            </div>
-            <div>
-                <b><a href="recetario.html">Recipe book</a></b>
-            </div>
-            <div>
-                <b><a href="bolsa-de-trabajo.html">CAREERS</a></b>
-            </div>
-            <div>
-                <b><a href="contacto.html">Contact</a></b></div>
-            <div class="header-phone flex-container align-center">
-                <a href="tel:8004725639">
-                    <img src="../images/i-phone.svg" height="16" width="16" alt="Teléfono" aria-hidden="true">
-                </a>
-                <span>01-800-472-5639</span>
-            </div>
-            <div>
-                <b><a href="../index.html" class="lang"><img src="../images/spanish.jpg" height="21" width="40" alt="English"></a></b>
+            <div class="flex-container" id="menu">
+                <div>
+                    <b><a href="categorias-productos.html">Product Catalog</a></b>
+                </div>
+                <div>
+                    <b><a href="recetario.html">Recipe book</a></b>
+                </div>
+                <div>
+                    <b><a href="bolsa-de-trabajo.html">CAREERS</a></b>
+                </div>
+                <div>
+                    <b><a href="contacto.html">Contact</a></b>
+                </div>
+                <div class="header-phone flex-container align-center">
+                    <a href="tel:8004725639">
+                        <img src="../images/i-phone.svg" height="16" width="16" alt="Teléfono" aria-hidden="true">
+                    </a>
+                    <span>01-800-472-5639</span>
+                </div>
+                <div>
+                    <b><a href="../index.html" class="lang"><img src="../images/spanish.jpg" height="21" width="40" alt="English"></a></b>
+                </div>
             </div>
         </div>
     </header>
- <div class="flex-container justify-center align-center direction-column p-30 main-width">
-        <div class="title"><i><h1>Veracruzano</h1></i></div>
-        <div class="p-30 w-full color-gray">
-            <a href="javascript:history.back(1)">Return to recipe book</a>
+    <div class="product-catalog">
+        <div class="title">
+            <h1><i>Catálogo de Productos</i></h1>
         </div>
-        <div class="recipe-book-image recipe-book-detail-veracruzano bg-img">
-            <!-- image -->
-        </div>
-        <div class="flex-container">
-            <div class="wpx-450">
-                <div class="item-title-red p-30">Ingredients</div>
-                <div class="color-gray line-height-2">
-                    <ul>
-                        <li><i>10x10® Palmex</i></li>
-                        <li><i>Crema vegetal o mayonesa Star Value®</i></li>
-                        <li><i>Queso fresco</i></li>
-                        <li><i>Salsa La Botanera®</i></li>
-                        <li><i>Limón</i></li>
-                        <li><i>Elote desgranado</i></li>
-                    </ul>
-                </div>
+        <div class="flex-container navigation-menu">
+            <div class="flex-container align-center justify-center wheat-line main-option-title">
+                <a href="categoria-productos.html?categoria=1" class="flex-container align-center justify-center">
+                    <div>
+                        <img src="../images/p-trigo.png" alt="Línea de Trigo" height="54" width="58">
+                    </div>
+                    <span class="wheat-color"><i>Línea de Trigo</i></span>
+                    <figure>
+                        <img src="../images/b-trigo.jpg" alt="">
+                    </figure>
+                </a>
             </div>
-            <div>
-                <div class="item-title-red p-30">Instructions</div>
-                <div class="color-gray line-height-2 p-30">
-Agrega un poco de crema vegetal o mayonesa Star Value® sobre el 10x10® Palmex, después añade el queso fresco de tu preferencia, un poco de salsa La Botanera®, y por último elote desgranado por arriba con un poco de limón. ¡Y listo para disfrutar!
-                </div>
+            <div class="flex-container align-center justify-center potato-line main-option-title">
+                <a href="categoria-productos.html?categoria=2" class="flex-container align-center justify-center">
+                    <div>
+                        <img src="../images/p-papa.png" alt="Quiero iniciar mi negocio" height="54" width="58">
+                    </div>
+                    <span class="potato-color"><i>Línea de papa</i></span>
+                    <figure>
+                        <img src="../images/b-papa.jpg" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="flex-container align-center justify-center corn-line main-option-title">
+                <a href="categoria-productos.html?categoria=3" class="flex-container align-center justify-center">
+                    <div>
+                        <img src="../images/p-maiz.png" alt="Quiero iniciar mi negocio" height="54" width="58">
+                    </div>
+                    <span class="corn-color"><i>Línea de maiz</i></span>
+                    <figure>
+                        <img src="../images/b-maiz.jpg" alt="">
+                    </figure>
+                </a>
+            </div>
+            <div class="flex-container align-center justify-center suncereal main-option-title">
+                 <a href="categoria-productos.html?categoria=4" class="flex-container align-center justify-center">
+                    <div>
+                        <img src="../images/p-suncereal-new.png" alt="Quiero iniciar mi negocio" height="54" width="58">
+                    </div>
+                    <span class="suncereal-color"><i>Sun cereal</i></span>
+                    <figure>
+                        <img src="../images/b-suncereal.jpg" alt="">
+                    </figure>
+                </a>
             </div>
         </div>
     </div>
