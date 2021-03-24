@@ -158,7 +158,7 @@ ol.breadcrumb {
 }
 .justify-space-between {
     justify-content: space-between;
-}repeat
+}
 .direction-row {
     flex-direction: row;
 }
@@ -206,6 +206,9 @@ ol.breadcrumb {
 .color-gray, .color-gray a {
     color: gray;
 }
+.bg-color-bluelight {
+    background: #2d3f4d;
+}
 .color-blue {
     color: #102638;
 }
@@ -252,6 +255,9 @@ ol.breadcrumb {
 }
 .pt-50 {
     padding-top: 50px;
+}
+.mt-30 {
+    margin-top: 30px;
 }
 .m-20 {
     margin: 20px;
@@ -922,6 +928,9 @@ footer div  {
 .itsmb-product-catalog {
     background: linear-gradient(to bottom,#e3391f 0,#e75b22 100%);
 }
+.itsmb-see-frying-manual {
+    background: linear-gradient(to bottom,#18a552 0,#80c158 100%);
+}
 /*-----------------------------------ITSMB JOB.HTML STYLES-----------------------------------*/
 /*-----------------------------------FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
 .frequent-questions-container {
@@ -1010,5 +1019,13 @@ footer div  {
     width: 100%;
     line-height: 0px;
 }
+.im-a-fryer-another-sites {
+  
+ 
+}
+.im-a-fryer-another-sites img {
+    border-bottom: 10px solid #e9212d;
+}
+   
 /*-----------------------------------END IM FRYER STYLES-----------------------------------*/
 
