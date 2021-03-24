@@ -91,7 +91,7 @@ body {
     width: 1170px;
     margin: auto;
 }
-.title i,.title span,.title h1 {
+.title i,.title span,.title h1, .subtitle i {
     color: #102638;
     line-height: 1.1;    
     font-family: PTItalic;
@@ -253,12 +253,22 @@ ol.breadcrumb {
 .w-full {
     width: 100%;
 }
+
+.w-half {
+    width: 50%;
+}
+
+.w-quarter {
+    width: 25%;
+}
+
 .h-full {
     height: 100%;
 }
 .wpx-450 {
     width: 450px;
 }
+
 .h-150 {
     height: 150px !important;
 }
@@ -279,6 +289,12 @@ ol.breadcrumb {
 }
 .br-white {
     border-right: 1px solid white;
+}
+.bb-gray {
+    border-bottom: 1px solid #a8a7a7;
+}
+.bt-gray {
+    border-top: 1px solid #a8a7a7;
 }
 /*-----------------------------------END GENERAL STYLES-----------------------------------*/
 /*-----------------------------------DEV STYLES-----------------------------------*/
@@ -876,7 +892,93 @@ footer div  {
     font-size: 19px;
 }
 /*-----------------------------------ITSMB JOB.HTML STYLES-----------------------------------*/
+.product-detail h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+}
+
+.product-detail .image-control-detail {
+    position: relative;
+}
+
 .product-detail .product-image{
     padding: 0;
     margin: 0;
+}
+
+.product-detail #definition-details {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.product-detail #definition-details .item-title-red i {
+    font-size: 20px;
+    color: #e9212d;
+}
+
+.product-detail #definition-details .item-title-red{
+    margin: 0;
+}
+
+.product-detail #definition-details p{
+    color: #102638;
+    padding: 0 5px 15px 0;
+    margin:0;
+}
+
+#similar-products>div{
+    padding: 50px 0;
+}
+
+#similar-products .similar-product .product-title i
+{
+    font-size: 20px; 
+}
+#similar-products .item-title-red i {
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+#similar-products .subtitle i{
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.change-product-view {
+    background: 0 0!important;
+    color: #102638!important;
+    font-size: 16px;
+    border: 2px solid #102638;
+    border-radius: 5px;
+    background: 0 0;
+    padding: 8px 15px;
+    outline: 0;
+    font-family: PTItalic;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.change-product-view:hover {
+    background-color: #102638 !important;
+    color: #fff !important;
+}
+
+.change-product-view:hover +  .product-image #raw-product-image {
+    opacity: 0;
+    display:none;
+}
+
+.product-image #fried-product-image {
+    display:none;
+}
+
+.change-product-view:hover +  .product-image>#fried-product-image {
+    display:block;
+    opacity: 1;
 }
