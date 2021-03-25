@@ -64,7 +64,7 @@
         <div class="bcrumbs">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li>Catálogo de Productos</li>
+                    <li>Product Catalog</li>
                     <li id="product-category-b-title"></li>
                 </ol>
             </div>
@@ -76,7 +76,7 @@
         </div>
     </div>
     <div class="new-products-catalog-bcategory">
-        <div class="title"><i><strong>Desarrollo de nuevos productos</strong></i></div>
+        <div class="title"><i><strong>New Product Development</strong></i></div>
         <div class="container">
             <div id="new-products-listing" class="flex-container flex-wrap"></div>
         </div>
@@ -634,13 +634,13 @@
     
     for (let index = 0; index < total_products; index++) {
         const product = categories_w_products[category_selected].products[index];
-        html_products += "<div class='justify-center product'><a href='producto.html?pid="+product.pid+"'><figure><img src='"+product.image+"' height='237' width='266' alt='"+product.name+"'><img src='images/plus-hover.svg' class='hov' aria-hidden='true' alt='Icono +'></figure><h2><i>"+product.name+"</i></h2><p>"+product.detail+"</p></a></div>";
+        html_products += "<div class='justify-center product'><a href='producto.html?pid="+product.pid+"'><figure><img src='"+product.image+"' height='237' width='266' alt='"+product.name+"'><img src='../images/plus-hover.svg' class='hov' aria-hidden='true' alt='Icono +'></figure><h2><i>"+product.name+"</i></h2><p>"+product.detail+"</p></a></div>";
     }
     products_listing_element.innerHTML  = html_products;
 
     for (let index = 0; index < total_new_products; index++) {
         const product = categories_w_products[category_selected].new_products[index];
-        html_new_products += "<div class='justify-center product'><a href='producto.html?pid="+product.pid+"'><figure><img src='"+product.image+"' height='237' width='266' alt='"+product.name+"'><img src='images/plus-hover.svg' class='hov' aria-hidden='true' alt='Icono +'></figure><h2><i>"+product.name+"</i></h2><p>"+product.detail+"</p></a></div>";
+        html_new_products += "<div class='justify-center product'><a href='producto.html?pid="+product.pid+"'><figure><img src='"+product.image+"' height='237' width='266' alt='"+product.name+"'><img src='../images/plus-hover.svg' class='hov' aria-hidden='true' alt='Icono +'></figure><h2><i>"+product.name+"</i></h2><p>"+product.detail+"</p></a></div>";
     }
     new_products_listing_element.innerHTML  = html_new_products;
 

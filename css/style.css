@@ -197,6 +197,10 @@ ol.breadcrumb {
 .flex-wrap {
     flex-wrap: wrap;
 }
+.flex-shrink-3 {
+    flex-shrink: 4;
+}
+
 /*-----------------------------------END FLEXBOX STYLES-----------------------------------*/
 /*-----------------------------------GENERAL STYLES-----------------------------------*/
 /*  COLORS  */

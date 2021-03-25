@@ -1,7 +1,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-    <title>Home - Palmex</title>
+    <title>Product - Palmex</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 	<link rel="apple-touch-icon icon" href="../images/phone.png">
 	<link rel="apple-touch-icon icon" sizes="72x72" href="../images/tablet.png">
@@ -53,31 +53,27 @@
             </div>
         </div>
     </header>
-    <div class="product-detail">
+   <div class="product-detail">
         <div class="bcrumbs">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li>Catálogo de Productos</li>
+                    <li>Product Catalog</li>
                     <li id="product-b-title"></li>
                     <li id="product-b-line"></li>
                 </ol>
             </div>
         </div>
-        <div class="text-center">
-            <h1 class="title"><i  id="product-title"></i></h1>
+        <div class="image-control-detail text-center">
+                <h1 class="title"><i  id="product-title"></i></h1>
+                <button type="submit" class="change-product-view"><i>See Fried Product</i></button>
             <figure class="product-image">
-                <img src="../images/productos/img/1057d94_4cc.jpg" height="100%" width="100%" alt="10 x 10 ®  extra Producto Crudo" class="cycle-slide cycle-slide-active">
+                <img id="raw-product-image" src="" height="100%" width="100%" alt="10 x 10 ®  extra Producto Crudo" class="cycle-slide cycle-slide-active">
+                <img id="fried-product-image" src="" height="100%" width="100%" alt="10 x 10 ®  extra Producto Crudo" class="cycle-slide cycle-slide-active">
             </figure>
         </div>
-        <div class="container">
-
+        <div class="container flex-container flex-wrap" id="definition-details">
         </div>
-    </div>
-    <div class="new-products-catalog-bcategory">
-        <div class="title"><i><strong>Comparación de tamaños productos similares</strong></i></div>
-        <div class="container">
-            <div id="new-products-listing" class="flex-container flex-wrap"></div>
-        </div>
+        <div class="container " id='similar-products'></div>
     </div>
     <footer>
         <div class="container flex-container">
@@ -186,432 +182,1822 @@
                     presentation: "20 kg / 44 lbs",
                     temperature: "235 ºC / 455 ºF",
                     sacks_or_boxes_per_pallet: "42",
-                    length: "10.2 - 12 cm",
-                    width: "10.2 - 10.6 cm",
-                    raw_product_image: "../images/productos/1057d94_251.jpg",
-                    fried_product_image: "../images/productos/1057d94_251.jpg",
-                    similar_products: {
-                        0: {
+                    length_width: "10.2 - 12 cm / 10.2 - 10.6 cm",
+                    raw_product_image: "../images/productos/img/1057d94_4cc.jpg",
+                    fried_product_image: "../images/productos/img/bc3229d_97f.jpg",
+                    similar_products: [
+                        {
                             name: "10 x 10",
                             measure: "26 x 18 cm",
-                            image: "" 
+                            image: "../images/productos/comparaciones/b6d3ff9_c4c.png"
                         },
-                        1: {
+                        {
                             name: "10 x 10 Max's",
                             measure: "26 x 18 cm",
-                            image: ""
+                            image: "../images/productos/comparaciones/1b0d3e5_f16.png"
                         }
-                    }
+                    ]
                 },
                 {
                     pid: 2,
                     name: "10 x 10 ® extra max's",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    raw_product_image: "../images/productos/1057d94_251.jpg",
-                    fried_product_image: "../images/productos/1057d94_251.jpg",
+                    category: 1,
+                    SKU: "PT10MX003",
+                    fried_density: "N/A",
+                    time: "14 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "235 ºC / 455 ºF",
+                    sacks_or_boxes_per_pallet: "42",
+                    length_width: "10.2 - 12 cm / 10.2 - 10.6 cm",
+                    raw_product_image: "../images/productos/img/7c1f9cb_d75.jpg",
+                    fried_product_image: "../images/productos/img/58dfc07_3cf.jpg",
+                    similar_products: [
+                        {
+                            name: "10 x 10",
+                            measure: "26 x 18 cm",
+                            image: "../images/productos/comparaciones/b6d3ff9_b7d.png"
+                        },
+                        {
+                            name: "10 x 10 Max's",
+                            measure: "26 x 18 cm",
+                            image: "../images/productos/comparaciones/1b0d3e5_805.png"
+                        }
+                    ]
                 },
                {
                     pid: 3,
                     name: "4 x 8 ®",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    raw_product_image: "../images/productos/1057d94_251.jpg",
-                    fried_product_image: "../images/productos/1057d94_251.jpg",
+                    category: 1,
+                    SKU: "PTFTBR004",
+                    fried_density: "N/A",
+                    time: "15 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "210 ºC / 410 ºF",
+                    sacks_or_boxes_per_pallet: "30",
+                    length_width: "8.6 - 9.4 cm / 3.5 - 4.1 cm",
+                    raw_product_image: "../images/productos/img/e1ad689_ed3.jpg",
+                    fried_product_image: "../images/productos/img/92179a8_d30.jpg",
+                    similar_products: [
+                        {
+                            name: "4x8",
+                            measure: "13.5 x 9.3 cm",
+                            image: "../images/productos/comparaciones/4a47a0d_2e0.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Grande",
+                            measure: "8.8 x 6.9 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_9cd.png"
+                        },
+                        {
+                            name: "Tocinito 3x3",
+                            measure: "7.4 x 6.3 cm",
+                            image: "../images/productos/comparaciones/10fb15c_c46.png"
+                        },
+                        {
+                            name: "4x4",
+                            measure: "8.9 x 7.1 cm",
+                            image: "../images/productos/comparaciones/09dd8c2_d1d.png"
+                        }
+                    ]
                 },
                 {
                     pid: 4,
                     name: "4 x 4 ®",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/9bff045_8c9.jpg"
+                    category: 1,
+                    SKU: "PTFTBR001",
+                    fried_density: "25 ± 5 g/l",
+                    time: "14 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "210 ºC / 410 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "4.2 - 4.8 cm / 3.4 - 3.8 cm",
+                    raw_product_image: "../images/productos/img/9bff045_7fb.jpg",
+                    fried_product_image: "../images/productos/img/a09bb89_cb7.jpg",
+                    similar_products: [
+                        {
+                            name: "4 x 8",
+                            measure: "13.5 x 9.3 cm",
+                            image: "../images/productos/comparaciones/4a47a0d_471.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Grande",
+                            measure: "8.8 x 6.9 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_c93.png"
+                        },
+                        {
+                            name: "Tocinito 3x3",
+                            measure: "7.4 x 6.3 cm",
+                            image: "../images/productos/comparaciones/10fb15c_070.png"
+                        },
+                        {
+                            name: "4x4",
+                            measure: "8.9 x 7.1 cm",
+                            image: "../images/productos/comparaciones/09dd8c2_651.png"
+                        }
+                    ]
                 },
                 {
                     pid: 5,
                     name: "2 x 2.5",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/4e57699_309.jpg"
+                    category: 1,
+                    SKU: "PTFTBR010",
+                    fried_density: "32 ± 5 g/l",
+                    time: "15 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "2.3 - 3.1 cm / 2.2 - 2.6 cm",
+                    raw_product_image: "../images/productos/img/4e57699_b23.jpg",
+                    fried_product_image: "../images/productos/img/03bd464_646.jpg",
+                    similar_products: [
+                        {
+                            name: "Cuadrini Novo",
+                            measure: "6 cm x 7 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_743.png"
+                        },
+                        {
+                            name: "2 x 2.5",
+                            measure: "5.5 cm x 4.8 cm",
+                            image: "../images/productos/comparaciones/10fb15c_5e5.png"
+                        },
+                        {
+                            name: "2 x 2",
+                            measure: "4.7 cm x 3.6 cm",
+                            image: "../images/productos/comparaciones/09dd8c2_a3d.png"
+                        }
+                    ]
                 },
                 {
                     pid: 6,
                     name: "Zarape 3 x 2",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/7e3d24c_f29.jpg"
+                    category: 1,
+                    SKU: "PTFTBR032",
+                    fried_density: "30 ± 3 g/l",
+                    presentation: "20 kg",
+                    raw_product_image: "../images/productos/img/7e3d24c_46f.jpg",
+                    fried_product_image: "../images/productos/img/f746668_9f8.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 7,
                     name: "2 x 2",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/fcb919a_5a2.jpg"
+                    category: 1,
+                    SKU: "PTFTBR007",
+                    fried_density: "37 ± 7 g/l",
+                    time: "12 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "210 ºC / 410 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "2.3 - 2.9 cm / 1.7 - 2.1 cm",
+                    raw_product_image: "../images/productos/img/fcb919a_989.jpg",
+                    fried_product_image: "../images/productos/img/9079b88_234.jpg",
+                    similar_products: [
+                        {
+                            name: "Cuadro Mass",
+                            measure: "6.7 cm x 6 cm",
+                            image: "../images/productos/comparaciones/4a47a0d_77b.png"
+                        },
+                        {
+                            name: "Cuadrini Novo",
+                            measure: "6 cm x 7 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_70e.png"
+                        },
+                        {
+                            name: "2 x 2.5",
+                            measure: "5.5 cm x 4.8 cm",
+                            image: "../images/productos/comparaciones/10fb15c_0ad.png"
+                        },
+                        {
+                            name: "2 x 2",
+                            measure: "4.7 cm x 3.6 cm",
+                            image: "../images/productos/comparaciones/09dd8c2_08f.png"
+                        }
+                    ]
                 },
                 {
                     pid: 8,
                     name: "Cuadrini novo",
                     detail: "Harina de trigo, en forma rectangular ondulada lisa.",
-                    image: "../images/productos/2de8142_970.jpg"
+                    category: 1,
+                    SKU: "PTFTAR012",
+                    fried_density: "36 ± 4 g/l",
+                    time: "14 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/2de8142_a6a.jpg",
+                    fried_product_image: "../images/productos/img/ef866f3_c91.jpg",
+                    similar_products: [
+                        {
+                            name: "Cuadro Mass",
+                            measure: "6.7 cm x 6 cm",
+                            image: "../images/productos/comparaciones/4a47a0d_210.png"
+                        },
+                        {
+                            name: "Cuadrini Novo",
+                            measure: "6 cm x 7 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_923.png"
+                        },
+                        {
+                            name: "2 x 2.5",
+                            measure: "5.5 cm x 4.8 cm",
+                            image: "../images/productos/comparaciones/10fb15c_97c.png"
+                        },
+                        {
+                            name: "2 x 2",
+                            measure: "4.7 cm x 3.6 cm",
+                            image: "../images/productos/comparaciones/09dd8c2_501.png"
+                        }
+                    ]
                 },
                 {
                     pid: 9,
                     name: "Cuadrini",
                     detail: "Harina de trigo, en forma de lámina rectangular lisa.",
-                    image: "../images/productos/2de8142_970.jpg"
+                    category: 1,
+                    SKU: "PTFTBR019",
+                    fried_density: "36 ± 4 g/l",
+                    time: "14 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "2.9 cm / 1.9 cm",
+                    raw_product_image: "../images/productos/img/6c1c4ea_0b6.jpg",
+                    fried_product_image: "../images/productos/img/c153779_a22.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 10,
                     name: "Mini cuadro ®",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/2654d5b_56d.jpg"
+                    category: 1,
+                    SKU: "PTFTAR005",
+                    fried_density: "42 ± 5 g/l",
+                    time: "14 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "205 ºC / 401 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: "2.6 - 3.2 cm / 1.1 - 1.3 cm",
+                    raw_product_image: "../images/productos/img/2654d5b_8fc.jpg",
+                    fried_product_image: "../images/productos/img/a26bf48_e60.jpg",
+                    similar_products: [
+                        {
+                            name: "Mini Cuadro (Trigo)",
+                            measure: "4.9 cm x 3.2 cm",
+                            image: "../images/productos/comparaciones/29197c0_c4c.png"
+                        },
+                        {
+                            name: "Tocinito 3x1",
+                            measure: "4.9 cm x 3 cm",
+                            image: "../images/productos/comparaciones/22aa77f_80b.png"
+                        },
+                        {
+                            name: "Mini Cuadro (Papa)",
+                            measure: "4.5 cm x 2.7 cm",
+                            image: "../images/productos/comparaciones/390e7d5_89a.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Mini",
+                            measure: "4.2 x 3 cm",
+                            image: "../images/productos/comparaciones/bbbe77b_f85.png"
+                        },
+                        {
+                            name: "Tocinito Micro",
+                            measure: "3.1 cm x 2.9 cm",
+                            image: "../images/productos/comparaciones/814cb6f_0fe.png"
+                        }
+                    ]
                 },
                 {
                     pid: 11,
                     name: "2 x 3 Liso",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/8a8d9fb_ed3.jpg"
+                    category: 1,
+                    SKU: "PTFTBR009",
+                    fried_density: "40 ± 8 g/l",
+                    time: "10 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "60",
+                    length_width: "1.6 - 2.2 cm / 2.7 - 3.3 cm",
+                    raw_product_image: "../images/productos/img/8a8d9fb_0a1.jpg",
+                    fried_product_image: "../images/productos/img/b2dd2dd_5a0.jpg",
+                    similar_products: [
+                        {
+                            name: "2x3 Liso",
+                            measure: "7.9 x 4 cm",
+                            image: "../images/productos/comparaciones/a551a50_9dc.png"
+                        },
+                        {
+                            name: "1.5x3 Liso",
+                            measure: "7.3 x 2.9 cm",
+                            image: "../images/productos/comparaciones/c347afa_3b2.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Mediano",
+                            measure: "5.3 x 5.2 cm",
+                            image: "../images/productos/comparaciones/33e784b_1db.png"
+                        }
+                    ]
                 },
                 {
                     pid: 12,
                     name: "1.5 x 3 Liso",
                     detail: "Harina de trigo, en forma de lámina rectangular estriada.",
-                    image: "../images/productos/5a83aff_765.jpg"
+                    category: 1,
+                    SKU: "PTFTBR021",
+                    fried_density: "37 ± 4 g/l",
+                    time: "10 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: "1.2 - 1.8 cm / 2.9 - 3.3 cm",
+                    raw_product_image: "../images/productos/img/5a83aff_67b.jpg",
+                    fried_product_image: "../images/productos/img/6721f26_712.jpg",
+                    similar_products: [
+                        {
+                            name: "2x3 Liso",
+                            measure: "7.9 x 4 cm",
+                            image: "../images/productos/comparaciones/a551a50_7a5.png"
+                        },
+                        {
+                            name: "1.5x3 Liso",
+                            measure: "7.3 x 2.9 cm",
+                            image: "../images/productos/comparaciones/c347afa_55b.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Mediano",
+                            measure: "5.3 x 5.2 cm",
+                            image: "../images/productos/comparaciones/33e784b_12f.png"
+                        }
+                    ]
                 },
                 {
                     pid: 13,
                     name: "Tubo",
                     detail: "Harina de trigo, en forma de tubo rayado.",
-                    image: "../images/productos/9333d47_9a1.jpg"
+                    category: 1,
+                    SKU: "PTFTBR020",
+                    fried_density: "38 ± 4 g/l",
+                    time: "15 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "205 ºC / 401 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: "3.6 - 4.6 cm / N/A",
+                    raw_product_image: "../images/productos/img/9333d47_800.jpg",
+                    fried_product_image: "../images/productos/img/d023a55_3c0.jpg",
+                    similar_products: [
+                        {
+                            name: "Tubo grande",
+                            measure: "9.8 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/6b54bf1_446.png"
+                        },
+                        {
+                            name: "Tornillo",
+                            measure: "9.1 cm x 2.2 cm",
+                            image: "../images/productos/comparaciones/502d272_b44.png"
+                        },
+                        {
+                            name: "Tubo",
+                            measure: "8.1 cm x 2 cm",
+                            image: "../images/productos/comparaciones/9da78ca_8d7.png"
+                        },
+                        {
+                            name: "Mini tornillo",
+                            measure: "5.6 cm x 1.7 cm",
+                            image: "../images/productos/comparaciones/a7dd950_2b8.png"
+                        }
+                    ]
                 },
                 {
                     pid: 14,
                     name: "Tubo grande",
                     detail: "Harina de trigo, en forma de tubo rayado.",
-                    image: "../images/productos/f2afe32_cfa.jpg"
+                    category: 1,
+                    SKU: "PTFTBR008",
+                    fried_density: "36 ± 3 g/l",
+                    time: "15 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "205 ºC / 401 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "4.5 - 6.1 cm / N/A",
+                    raw_product_image: "../images/productos/img/f2afe32_9a9.jpg",
+                    fried_product_image: "../images/productos/img/03e554e_4fa.jpg",
+                    similar_products: [
+                        {
+                            name: "Tubo grande",
+                            measure: "9.8 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/6b54bf1_597.png"
+                        },
+                        {
+                            name: "Tornillo",
+                            measure: "9.1 cm x 2.2 cm",
+                            image: "../images/productos/comparaciones/502d272_0c0.png"
+                        },
+                        {
+                            name: "Tubo",
+                            measure: "8.1 cm x 2 cm",
+                            image: "../images/productos/comparaciones/9da78ca_2d1.png"
+                        },
+                        {
+                            name: "Mini tornillo",
+                            measure: "5.6 cm x 1.7 cm",
+                            image: "../images/productos/comparaciones/a7dd950_532.png"
+                        }
+                    ]
                 },
                 {
                     pid: 15,
                     name: "Anillo",
                     detail: "Harina de trigo, en forma de anillo rayado.",
-                    image: "../images/productos/6ad66b9_d1a.jpg"
+                    category: 1,
+                    SKU: "PTFTAR008",
+                    fried_density: "48.5 ± 6 g/l",
+                    time: "14 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: ".7 - 1.1 cm / N/A",
+                    raw_product_image: "../images/productos/img/6ad66b9_af5.jpg",
+                    fried_product_image: "../images/productos/img/a1bc037_57c.jpg",
+                    similar_products: [
+                        {
+                            name: "Aro sabor Cebolla",
+                            measure: "4.2 cm x 1.2 cm",
+                            image: "../images/productos/comparaciones/156116b_23e.png"
+                        },
+                        {
+                            name: "Dona",
+                            measure: "3 cm x 0.7 cm",
+                            image: "../images/productos/comparaciones/04243e0_0be.png"
+                        },
+                        {
+                            name: "Anillo Grande",
+                            measure: "2.3 cm",
+                            image: "../images/productos/comparaciones/087a436_ac0.png"
+                        },
+                        {
+                            name: "Anillo",
+                            measure: "1.5 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/e6b4605_4f8.png"
+                        }
+                    ]
                 },
                 {
                     pid: 16,
                     name: "Anillo grande",
                     detail: "Harina de trigo, en forma de anillo rayado.",
-                    image: "../images/productos/80e77d9_a1c.jpg"
+                    category: 1,
+                    SKU: "PTFTAR011",
+                    fried_density: "44 ± 5 g/l",
+                    time: "11 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: ".9 - 1.4 / N/A",
+                    raw_product_image: "../images/productos/img/80e77d9_ffa.jpg",
+                    fried_product_image: "../images/productos/img/c8e2289_a95.jpg",
+                    similar_products: [
+                        {
+                            name: "Aro sabor Cebolla",
+                            measure: "4.2 cm x 1.2 cm",
+                            image: "../images/productos/comparaciones/156116b_8a0.png"
+                        },
+                        {
+                            name: "Dona",
+                            measure: "3 cm x 0.7 cm",
+                            image: "../images/productos/comparaciones/04243e0_134.png"
+                        },
+                        {
+                            name: "Anillo Grande",
+                            measure: "2.3 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/087a436_f6c.png"
+                        },
+                        {
+                            name: "Anillo",
+                            measure: "1.5 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/e6b4605_aa8.png"
+                        }
+                    ]
                 },
                 {
                     pid: 17,
                     name: "Rueda grande",
                     detail: "Harina de trigo, en forma de rueda.",
-                    image: "../images/productos/fd1b203_36e.jpg"
+                    category: 1,
+                    SKU: "PTFTAR018",
+                    fried_density: "22 ± 5 g/l",
+                    time: "17",
+                    presentation: "13 kg / 28 lbs",
+                    temperature: "185 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/c210ea2_9b8.jpg",
+                    fried_product_image: "../images/productos/img/c210ea2_398.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 18,
                     name: "Rueda",
                     detail: "Harina de trigo, en forma de rueda.",
-                    image: "../images/productos/dcb5cfd_d8b.jpg"
+                    category: 1,
+                    SKU: "PTFTAR001",
+                    fried_density: "22 ± 5 g/l",
+                    time: "17",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "185 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/dcb5cfd_801.jpg",
+                    fried_product_image: "../images/productos/img/4b01c6f_1f3.jpg",
+                    similar_products: [
+                        {
+                            name: "Rueda (Trigo)",
+                            measure: "6.2 cm x 0.4 cm",
+                            image: "../images/productos/comparaciones/d558285_b7a.png"
+                        },
+                        {
+                            name: "Mini Rueda (Trigo)",
+                            measure: "4.5 cm x 0.3 cm",
+                            image: "../images/productos/comparaciones/2fa5f76_1be.png"
+                        },
+                        {
+                            name: "Mini Rueda (Papa)",
+                            measure: "4.4 cm x 0.6 cm",
+                            image: "../images/productos/comparaciones/f8bd9d7_47d.png"
+                        },
+                        {
+                            name: "Mini rueda papa Max's",
+                            measure: "4.2 cm x 0.4 cm",
+                            image: "../images/productos/comparaciones/087b584_490.png"
+                        }
+                    ]
                 },
                 {
                     pid: 19,
                     name: "Mini rueda",
                     detail: "Harina de trigo, en forma de mini rueda.",
-                    image: "../images/productos/8d0d305_f9f.jpg"
+                    category: 1,
+                    SKU: "PTFTAR014",
+                    fried_density: "31 ± 5 g/l",
+                    time: "20",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "185 ºC / 356 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/8d0d305_a4d.jpg",
+                    fried_product_image: "../images/productos/img/156005c_717.jpg",
+                    similar_products: [
+                        {
+                            name: "Rueda (Trigo)",
+                            measure: "6.2 cm x 0.4 cm",
+                            image: "../images/productos/comparaciones/d558285_e2a.png"
+                        },
+                        {
+                            name: "Mini Rueda (Trigo)",
+                            measure: "4.5 cm x 0.3 cm",
+                            image: "../images/productos/comparaciones/2fa5f76_2b7.png"
+                        },
+                        {
+                            name: "Mini Rueda (Papa)",
+                            measure: "4.4 cm x 0.6 cm",
+                            image: "../images/productos/comparaciones/2fa5f76_2b7.png"
+                        },
+                        {
+                            name: "Mini rueda papa Max's",
+                            measure: "4.2 cm x 0.4 cm",
+                            image: "../images/productos/comparaciones/087b584_bd3.png"
+                        }
+                    ]
                 },
                 {
                     pid: 20,
                     name: "Donita",
                     detail: "Harina de trigo, en forma de aro.",
-                    image: "../images/productos/8ddb68c_4ac.jpg"
+                    category: 1,
+                    SKU: "PTFTAR009",
+                    fried_density: "42 ± 4 g/l",
+                    time: "17",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "185 ºC / 365 ºF",
+                    sacks_or_boxes_per_pallet: "55",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/8ddb68c_942.jpg",
+                    fried_product_image: "../images/productos/img/624f3b5_091.jpg",
+                    similar_products: [
+                        {
+                            name: "Aro sabor Cebolla",
+                            measure: "4.2 cm x 1.2 cm",
+                            image: "../images/productos/comparaciones/156116b_c3e.png"
+                        },
+                        {
+                            name: "Dona",
+                            measure: "3 cm x 0.7 cm",
+                            image: "../images/productos/comparaciones/04243e0_f8e.png"
+                        },
+                        {
+                            name: "Anillo Grande",
+                            measure: "2.3 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/087a436_d74.png"
+                        },
+                        {
+                            name: "Anillo",
+                            measure: "1.5 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/e6b4605_fc7.png"
+                        }
+                    ]
                 },
                 {
                     pid: 21,
                     name: "Tornillo ®",
                     detail: "Harina de trigo, en forma de espiral.",
-                    image: "../images/productos/4701ab4_4e6.jpg"
+                    category: 1,
+                    SKU: "PTFTAR002",
+                    fried_density: "31 ± 4.5 g/l",
+                    time: "19",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: "3.7 - 4.9 cm / N/A",
+                    raw_product_image: "../images/productos/img/4701ab4_228.jpg",
+                    fried_product_image: "../images/productos/img/3288060_7a2.jpg",
+                    similar_products: [
+                        {
+                            name: "Tubo grande",
+                            measure: "9.8 x 0.5 cm",
+                            image: "../images/productos/comparaciones/6b54bf1_5e8.png"
+                        },
+                        {
+                            name: "Tornillo",
+                            measure: "9.1 x 2.2 cm",
+                            image: "../images/productos/comparaciones/502d272_c15.png"
+                        },
+                        {
+                            name: "Tubo",
+                            measure: "8.1 x 2 cm",
+                            image: "../images/productos/comparaciones/9da78ca_afa.png"
+                        },
+                        {
+                            name: "Mini tornillo",
+                            measure: "5.6 x 1.7 cm",
+                            image: "../images/productos/comparaciones/a7dd950_0b2.png"
+                        }
+                    ]
                 },
                 {
                     pid: 22,
                     name: "Mini tornillo de trigo",
                     detail: "Harina de trigo, en forma de espiral.",
-                    image: "../images/productos/f7e7741_c17.jpg"
+                    category: 1,
+                    SKU: "PTFTBR031",
+                    fried_density: "36.0 ± 5.0 g/l",
+                    time: "15 - 16",
+                    presentation: "15 kg/33 lbs",
+                    temperature: "250 ºC / 482 ºF",
+                    sacks_or_boxes_per_pallet: "44",
+                    length_width: "3.5 / N/A",
+                    raw_product_image: "../images/productos/img/f7e7741_573.jpg",
+                    fried_product_image: "../images/productos/img/5151be1_645.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 23,
                     name: "Papa Francesa de Trigo Corta",
                     detail: "Harina de trigo, en forma de palito cuadrado.",
-                    image: "../images/productos/c11d50d_055.jpg"
+                    category: 1,
+                    SKU: "PTFTBR014",
+                    fried_density: "49 ± 4.5 g/l",
+                    time: "16",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/c11d50d_6c3.jpg",
+                    fried_product_image: "../images/productos/img/5201a66_c73.jpg",
+                    similar_products: [
+                        {
+                            name: "Palillo",
+                            measure: "11.6 x 1.1 cm",
+                            image: "../images/productos/comparaciones/1815ee3_abe.png"
+                        },
+                        {
+                            name: "Palito Papa Max's",
+                            measure: "8.9 x .9 cm",
+                            image: "../images/productos/comparaciones/d867363_8f9.png"
+                        },
+                        {
+                            name: "Papa Francesa (Papa)",
+                            measure: "8.6 cm x 0.7 cm",
+                            image: "../images/productos/comparaciones/b4a1553_0be.png"
+                        },
+                        {
+                            name: "Veggie Sticks",
+                            measure: "5.9 cm x 0.5 cm",
+                            image: "../images/productos/comparaciones/02eb21d_f09.png"
+                        },
+                        {
+                            name: "Papa Francesa (Trigo)",
+                            measure: "5.1 cm x N/A",
+                            image: "../images/productos/comparaciones/988ed58_08b.png"
+                        },
+                        {
+                            name: "Cabellin",
+                            measure: "2.5 cm x N/A",
+                            image: "../images/productos/comparaciones/3015a13_9ac.png"
+                        }
+                    ]
                 },
                 {
                     pid: 24,
                     name: "Palillo",
                     detail: "Harina de trigo, en forma de palito con punta redonda.",
-                    image: "../images/productos/8de00cc_bc5.jpg"
+                    category: 1,
+                    SKU: "PTFTAR004",
+                    fried_density: "30 ± 6 g/l",
+                    time: "11",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "180 ºC / 356 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/4b62af3_d57.jpg",
+                    fried_product_image: "../images/productos/img/34c1be1_415.jpg",
+                    similar_products: [
+                        {
+                            name: "Palillo",
+                            measure: "11.6 x 1.1 cm",
+                            image: "../images/productos/comparaciones/1815ee3_74d.png"
+                        },
+                        {
+                            name: "Palito Papa Max's",
+                            measure: "8.9 x .9 cm",
+                            image: "../images/productos/comparaciones/8bae6ba_92d.png"
+                        },
+                        {
+                            name: "Papa Francesa (Papa)",
+                            measure: "8.6 cm x 0.7 cm",
+                            image: "../images/productos/comparaciones/b4a1553_e37.png"
+                        },
+                        {
+                            name: "Veggie Sticks",
+                            measure: "5.9 x .5 cm",
+                            image: "../images/productos/comparaciones/02eb21d_d0b.png"
+                        },
+                        {
+                            name: "Papa Francesa (Trigo)",
+                            measure: "5.1 cm x N/A",
+                            image: "../images/productos/comparaciones/988ed58_a4a.png"
+                        },
+                        {
+                            name: "Cabellin",
+                            measure: "2.5 cm x N/A",
+                            image: "../images/productos/comparaciones/3015a13_f6b.png"
+                        }
+                    ]
                 },
                 {
                     pid: 25,
                     name: "Cabellin",
                     detail: "Harina de trigo, almidón de maíz, sal yodada, en forma de palito redondo.",
-                    image: "../images/productos/7712846_99f.jpg"
+                    category: 1,
+                    SKU: "PTFTBR003",
+                    fried_density: "53 ± 4 g/l",
+                    time: "14",
+                    presentation: "40 kg / 88 lbs",
+                    temperature: "190 ºC / 374 ºF",
+                    sacks_or_boxes_per_pallet: "24",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/7712846_386.jpg",
+                    fried_product_image: "../images/productos/img/39ec5eb_513.jpg",
+                    similar_products: [
+                        {
+                            name: "Palillo",
+                            measure: "11.6 x 1.1 cm",
+                            image: "../images/productos/comparaciones/1815ee3_a4b.png"
+                        },
+                        {
+                            name: "Palito Papa Max's",
+                            measure: "8.9 x 0.9 cm",
+                            image: "../images/productos/comparaciones/d867363_961.png"
+                        },
+                        {
+                            name: "Veggie Sticks",
+                            measure: "5.9 x .5 cm",
+                            image: "../images/productos/comparaciones/988ed58_03b.png"
+                        },
+                        {
+                            name: "Papa Francesa (Trigo)",
+                            measure: "5.1 cm x N/A",
+                            image: "../images/productos/comparaciones/988ed58_9e9.png"
+                        },
+                        {
+                            name: "Cabellin",
+                            measure: "2.5 x N/A",
+                            image: "../images/productos/comparaciones/3015a13_c90.png"
+                        }
+                    ]
                 },
                 {
                     pid: 26,
                     name: "Rotini ®",
                     detail: "Harina de trigo, en forma de víbora.",
-                    image: "../images/productos/255788c_1ba.jpg"
+                    category: 1,
+                    SKU: "PTFTAR006",
+                    fried_density: "57 max",
+                    time: "11",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "180 ºC / 356 ºF",
+                    sacks_or_boxes_per_pallet: "60",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/255788c_92c.jpg",
+                    fried_product_image: "../images/productos/img/5db6dfc_f4d.jpg",
+                    similar_products: [
+                        {
+                            name: "Ola",
+                            measure: "6.6 x 0.7 cm",
+                            image: "../images/productos/comparaciones/1ec7de1_6f0.png"
+                        },
+                        {
+                            name: "Rotini",
+                            measure: "3.7 x 0.9 cm",
+                            image: "../images/productos/comparaciones/75f3947_fd9.png"
+                        },
+                        {
+                            name: "Espacial",
+                            measure: "3.6 x 3.6 cm",
+                            image: "../images/productos/comparaciones/a4db11c_dcf.png"
+                        }
+                    ]
                 },
                 {
                     pid: 27,
                     name: "Olas ®",
                     detail: "Harina de trigo, en forma de víbora.",
-                    image: "../images/productos/427aee4_6ff.jpg"
+                    category: 1,
+                    SKU: "PTFTAR007",
+                    fried_density: "38 ± 6 g/l",
+                    time: "11",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "185 ºC / 365 ºF",
+                    sacks_or_boxes_per_pallet: "50",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/427aee4_815.jpg",
+                    fried_product_image: "../images/productos/img/b8e4221_274.jpg",
+                    similar_products: [
+                        {
+                            name: "Ola",
+                            measure: "6.6 x 0.7 cm",
+                            image: "../images/productos/comparaciones/1ec7de1_939.png"
+                        },
+                        {
+                            name: "Rotini",
+                            measure: "3.7 x 0.9 cm",
+                            image: "../images/productos/comparaciones/75f3947_0d4.png"
+                        },
+                        {
+                            name: "Espacial",
+                            measure: "3.6 x 3.6 cm",
+                            image: "../images/productos/comparaciones/a4db11c_7ca.png"
+                        }
+                    ]
                 },
                 {
                     pid: 28,
                     name: "Espacial",
                     detail: "Harina de trigo, en forma de figuras espaciales.",
-                    image: "../images/productos/faec52b_5d3.jpg"
+                    category: 1,
+                    SKU: "PTFTAR003",
+                    fried_density: "38 ± 5 g/l",
+                    time: "13",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "180 ºC / 356 ºF",
+                    sacks_or_boxes_per_pallet: "75",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/faec52b_02b.jpg",
+                    fried_product_image: "../images/productos/img/be9cbcd_28f.jpg",
+                    similar_products: [
+                        {
+                            name: "Ola",
+                            measure: "6.6 x 0.7 cm",
+                            image: "../images/productos/comparaciones/1ec7de1_934.png"
+                        },
+                        {
+                            name: "Rotini",
+                            measure: "3.7 x 0.9 cm",
+                            image: "../images/productos/comparaciones/75f3947_470.png"
+                        },
+                        {
+                            name: "Espacial",
+                            measure: "3.6 x 3.6 cm",
+                            image: "../images/productos/comparaciones/a4db11c_2ef.png"
+                        }
+                    ]
                 },
                 {
                     pid: 29,
                     name: "Tocinito 3x3",
                     detail: "Harina de trigo, en forma cuadrada con rayas.",
-                    image: "../images/productos/d59d6f5_ac4.jpg"
+                    category: 1,
+                    SKU: "PTFTBR006",
+                    fried_density: "25.5 ± 5 g/l",
+                    time: "10",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "210 ºC / 410 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: "N/A / N/A",
+                    raw_product_image: "../images/productos/img/d59d6f5_7e0.jpg",
+                    fried_product_image: "../images/productos/img/e3de919_5c8.jpg",
+                    similar_products: [
+                        {
+                            name: "4x8",
+                            measure: "13.5 x 9.3 cm",
+                            image: "../images/productos/comparaciones/4a47a0d_691.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Grande",
+                            measure: "13.5 x 9.3 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_672.png"
+                        },
+                        {
+                            name: "Tocinito 3x3",
+                            measure: "7.4 x 6.3 cm",
+                            image: "../images/productos/comparaciones/10fb15c_2a1.png"
+                        },
+                        {
+                            name: "4x4",
+                            measure: "8.9 x 7.1 cm",
+                            image: "../images/productos/comparaciones/10fb15c_2a1.png"
+                        }
+                    ]
                 },
                 {
                     pid: 30,
                     name: "Tocinito 3x1",
                     detail: "Harina de trigo, en forma de rectángulo con rayas.",
-                    image: "../images/productos/5f05c26_900.jpg"
+                    category: 1,
+                    SKU: "PTFTBR002",
+                    fried_density: "39 ± 5 g/l",
+                    time: "12",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "60",
+                    length_width: "2.4 - 2.8 cm / 1 - 1.2 cm",
+                    raw_product_image: "../images/productos/img/5f05c26_060.jpg",
+                    fried_product_image: "../images/productos/img/303e1cb_880.jpg",
+                    similar_products: [
+                        {
+                            name: "Mini cuadro (trigo)",
+                            measure: "4.9 x 3.2 cm",
+                            image: "../images/productos/comparaciones/29197c0_5b0.png"
+                        },
+                        {
+                            name: "Tocinito 3x1",
+                            measure: "4.9 x 3 cm",
+                            image: "../images/productos/comparaciones/22aa77f_7a5.png"
+                        },
+                        {
+                            name: "Mini cuadro (papa)",
+                            measure: "4.5 x 2.7 cm",
+                            image: "../images/productos/comparaciones/390e7d5_ae1.png"
+                        },
+                        {
+                            name: "Tocinito micro",
+                            measure: "3.1 x 2.9 cm",
+                            image: "../images/productos/comparaciones/bbbe77b_6e6.png"
+                        },
+                        {
+                            name: "Cuadri bacon mini",
+                            measure: "4.2 x 3 cm",
+                            image: "../images/productos/comparaciones/814cb6f_38e.png"
+                        }
+                    ]
                 },
                 {
                     pid: 31,
                     name: "Tocinito micro",
                     detail: "Harina de trigo, en forma cuadrada con rayas.",
-                    image: "../images/productos/8019d32_125.jpg"
+                    category: 1,
+                    SKU: "PTFTBR022",
+                    fried_density: "53 ± 2 g/l",
+                    time: "11",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "60",
+                    length_width: "1.75 - 2.05 cm / 1.1 - 1.3 cm",
+                    raw_product_image: "../images/productos/img/8019d32_654.jpg",
+                    fried_product_image: "../images/productos/img/28ccb8d_119.jpg",
+                    similar_products: [
+                        {
+                            name: "Mini cuadro (trigo)",
+                            measure: "4.9 x 3.2 cm",
+                            image: "../images/productos/comparaciones/29197c0_a02.png"
+                        },
+                        {
+                            name: "Tocinito 3x1",
+                            measure: "4.9 x 3 cm",
+                            image: "../images/productos/comparaciones/22aa77f_780.png"
+                        },
+                        {
+                            name: "Mini cuadro (papa)",
+                            measure: "4.5 x 2.7 cm",
+                            image: "../images/productos/comparaciones/390e7d5_722.png"
+                        },
+                        {
+                            name: "Cuadri bacon mini",
+                            measure: "4.2 x 3 cm",
+                            image: "../images/productos/comparaciones/814cb6f_59b.png"
+                        },
+                        {
+                            name: "Tocinito micro",
+                            measure: "3.1 x 2.9 cm",
+                            image: "../images/productos/comparaciones/bbbe77b_8cc.png"
+                        }
+                    ]
                 },
                 {
                     pid: 32,
                     name: "Cuadri bacon grande",
                     detail: "Harina de trigo, en forma de rectángulo con rayas.",
-                    image: "../images/productos/54c888a_634.jpg"
+                    category: 1,
+                    SKU: "PTFTBR011",
+                    fried_density: "25 ± 6 g/l",
+                    time: "15",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "190 ºC / 374 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "4.3 - 4.9 cm / 3.4 - 4 cm",
+                    raw_product_image: "../images/productos/img/54c888a_093.jpg",
+                    fried_product_image: "../images/productos/img/cf5ad39_7ec.jpg",
+                    similar_products: [
+                        {
+                            name: "4x8",
+                            measure: "13.5 x 9.3 cm",
+                            image: "../images/productos/comparaciones/4a47a0d_fba.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Grande",
+                            measure: "8.8 x 6.9 cm",
+                            image: "../images/productos/comparaciones/fb5c81e_54c.png"
+                        },
+                        {
+                            name: "Tocinito 3x3",
+                            measure: "7.4 x 6.3 cm",
+                            image: "../images/productos/comparaciones/10fb15c_d3e.png"
+                        },
+                        {
+                            name: "4x4",
+                            measure: "8.9 x 7.1 cm",
+                            image: "../images/productos/comparaciones/09dd8c2_f46.png"
+                        }
+                    ]
                 },
                 {
                     pid: 33,
                     name: "Cuadri bacon mediano",
                     detail: "Harina de trigo, en forma de rectángulo con rayas.",
-                    image: "../images/productos/ef38790_154.jpg"
+                    category: 1,
+                    SKU: "PTFTBR015",
+                    fried_density: "34 ± 6 g/l",
+                    time: "14",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "48",
+                    length_width: "3 - 3.6 cm / 2 - 2.4 cm",
+                    raw_product_image: "../images/productos/img/ef38790_c0f.jpg",
+                    fried_product_image: "../images/productos/img/e8ea65e_a64.jpg",
+                    similar_products: [
+                        {
+                            name: "2x3 Liso",
+                            measure: "7.9 x 4 cm",
+                            image: "../images/productos/comparaciones/a551a50_050.png"
+                        },
+                        {
+                            name: "1.5x3 Liso",
+                            measure: "7.3 x 2.9 cm",
+                            image: "../images/productos/comparaciones/c347afa_b2d.png"
+                        },
+                        {
+                            name: "Cuadri Bacon Mediano",
+                            measure: "5.3 x 5.2 cm",
+                            image: "../images/productos/comparaciones/33e784b_20d.png"
+                        }
+                    ]
                 },
                 {
                     pid: 34,
                     name: "Cuadri bacon mini",
                     detail: "Harina de trigo, en forma de rectángulo con rayas.",
-                    image: "../images/productos/ef38790_ec1.jpg"
+                    category: 1,
+                    SKU: "PTFTBR012",
+                    fried_density: "52 ± 4 g/l",
+                    time: "14",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "60",
+                    length_width: "2.4 - 3 cm / 1.1 - 1.5 cm",
+                    raw_product_image: "../images/productos/img/ef38790_6d6.jpg",
+                    fried_product_image: "../images/productos/img/bdf25ee_512.jpg",
+                    similar_products: [
+                        {
+                            name: "Mini cuadro (trigo)",
+                            measure: "4.9 x 3.2 cm",
+                            image: "../images/productos/comparaciones/29197c0_213.png"
+                        },
+                        {
+                            name: "Tocinito 1x3",
+                            measure: "4.9 x 3 cm",
+                            image: "../images/productos/comparaciones/22aa77f_2bd.png"
+                        },
+                        {
+                            name: "Mini cuadro (papa)",
+                            measure: "4.5 x 2.7 cm",
+                            image: "../images/productos/comparaciones/390e7d5_027.png"
+                        },
+                        {
+                            name: "Tocinito micro",
+                            measure: "3.1 x 2.9 cm",
+                            image: "../images/productos/comparaciones/bbbe77b_4aa.png"
+                        },
+                        {
+                            name: "Cuadri bacon mini",
+                            measure: "4.2 x 3 cm",
+                            image: "../images/productos/comparaciones/814cb6f_019.png"
+                        }
+                    ]
                 },
                 {
                     pid: 35,
                     name: "Veggie chip natural",
                     detail: "Harina de papa en forma de óvalos ondulados.",
-                    image: "../images/productos/90f7484_d14.jpg"
+                    category: 1,
+                    SKU: "PPPREF009",
+                    time: "14",
+                    temperature: "6 - 7 segundos",
+                    raw_product_image: "../images/productos/img/90f7484_b56.jpg",
+                    fried_product_image: "../images/productos/img/2247b2c_46b.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 36,
                     name: "Veggie chip espinaca",
                     detail: "Harina de papa con espinaca en polvo en forma de óvalos ondulados.",
-                    image: "../images/productos/ebab3be_cf5.jpg"
+                    category: 1,
+                    SKU: "PPPREF007",
+                    time: "6 - 7 segundos",
+                    temperature: "200 ºC / 392 ºF",
+                    raw_product_image: "../images/productos/img/ebab3be_df8.jpg",
+                    fried_product_image: "../images/productos/img/4f546fe_bbf.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 37,
                     name: "Veggie chip tomate",
                     detail: "Harina de papa con tomate en polvo en forma de óvalos ondulados.",
-                    image: "../images/productos/060874d_9ae.jpg"
+                    category: 1,
+                    SKU: "PPPREF008",
+                    time: "6 - 7 segundos",
+                    temperature: "200 ºC / 392 ºF",
+                    raw_product_image: "../images/productos/img/060874d_496.jpg",
+                    fried_product_image: "../images/productos/img/6e5e29d_fb8.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 38,
                     name: "Veggie straw natural",
                     detail: "Harina de papa en forma de tubitos huecos.",
-                    image: "../images/productos/02a82d7_b6d.jpg"
+                    category: 1,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/02a82d7_50d.jpg",
+                    fried_product_image: "../images/productos/img/0224314_38e.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 39,
                     name: "Veggie straw tomate",
                     detail: "Harina de papa con tomate en polvo en forma de tubitos huecos.",
-                    image: "../images/productos/926eff3_b0b.jpg"
+                    category: 1,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/926eff3_d34.jpg",
+                    fried_product_image: "../images/productos/img/7c17642_76b.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 40,
                     name: "Veggie straw espinaca",
                     detail: "Harina de papa con espinaca en polvo en forma de tubitos huecos.",
-                    image: "../images/productos/0ee02ab_d56.jpg"
+                    category: 1,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/0ee02ab_96b.jpg",
+                    fried_product_image: "../images/productos/img/05a156c_ee8.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 41,
                     name: "Mix M",
                     detail: "Mezcla de variedad de figuras compuesta por mini rueda de trigo, tocinito 3x1, concha de maíz, aro de cebolla.",
-                    image: "../images/productos/40b1098_0b5.jpg"
+                    category: 1,
+                    SKU: "PTFTBR029",
+                    fried_density: "41 ± 6 g/l",
+                    time: "18 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "190 ºC / 374 ºF",
+                    sacks_or_boxes_per_pallet: "36",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/40b1098_10a.jpg",
+                    fried_product_image: "../images/productos/img/156005c_dc1.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 42,
                     name: "Hojuela de papa clásica",
                     detail: "Harina de papa, en forma de láminas ovaladas.",
-                    image: "../images/productos/629cabc_341.jpg"
+                    category: 2,
+                    SKU: "PPPREH002",
+                    fried_density: "28 ± 4 g/l",
+                    time: "4 - 5 segundos",
+                    presentation: "8 kg / 17.6 lbs",
+                    temperature: "210 ºC / 410 ºF",
+                    sacks_or_boxes_per_pallet: "49",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/629cabc_ed4.jpg",
+                    fried_product_image: "../images/productos/img/2c07868_120.jpg",
+                    similar_products: [
+                        {
+                            name: "Hojuela Clásica",
+                            measure: "6.9 x 5.4 cm",
+                            image: "../images/productos/comparaciones/5a1b6a7_032.png"
+                        },
+                        {
+                            name: "Hojuela de Papa Premium",
+                            measure: "6.3 x 5.2 cm",
+                            image: "../images/productos/comparaciones/ee7957a_2bf.png"
+                        },
+                        {
+                            name: "Hojuela Micro Ondulada",
+                            measure: "5.5 x 4.2 cm",
+                            image: "../images/productos/comparaciones/be460c6_36f.png"
+                        }
+                    ]
                 },
                 {
                     pid: 43,
                     name: "Hojuela de papa micro ondulada",
                     detail: "Harina de papa, en forma de óvalos ondulados.",
-                    image: "../images/productos/3278e0e_0f4.jpg"
+                    category: 2,
+                    SKU: "PPPREH003",
+                    fried_density: "42 ± 5 g/l",
+                    time: "6 segundos",
+                    presentation: "8 kg / 17.6 lbs",
+                    temperature: "205 ºC / 401 ºF",
+                    sacks_or_boxes_per_pallet: "49",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/3278e0e_3d8.jpg",
+                    fried_product_image: "../images/productos/img/5d471d3_2a8.jpg",
+                    similar_products: [
+                        {
+                            name: "Hojuela Clásica",
+                            measure: "6.9 x 5.4 cm",
+                            image: "../images/productos/comparaciones/5a1b6a7_a65.png"
+                        },
+                        {
+                            name: "Hojuela de Papa Premium",
+                            measure: "6.3 x 5.2 cm",
+                            image: "../images/productos/comparaciones/ee7957a_74d.png"
+                        },
+                        {
+                            name: "Hojuela Micro Ondulada",
+                            measure: "5.5 x 4.2 cm",
+                            image: "../images/productos/comparaciones/be460c6_b8b.png"
+                        }
+                    ]
                 },
                 {
                     pid: 44,
                     name: "Aro de papa sabor cebolla",
                     detail: "Harina de papa, en forma de aro.",
-                    image: "../images/productos/25aaab0_d0b.jpg"
+                    category: 2,
+                    SKU: "PTPVFI004",
+                    fried_density: "43 ± 5 g/l",
+                    time: "16 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "190 ºC / 374 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/25aaab0_f80.jpg",
+                    fried_product_image: "../images/productos/img/93c53d3_ac0.jpg",
+                    similar_products: [
+                        {
+                            name: "Aro de Cebolla",
+                            measure: "4.2 x 1.2 cm",
+                            image: "../images/productos/comparaciones/156116b_753.png"
+                        },
+                        {
+                            name: "Dona",
+                            measure: "3 x 0.7 cm",
+                            image: "../images/productos/comparaciones/04243e0_025.png"
+                        },
+                        {
+                            name: "Anillo Grande",
+                            measure: "2.3 x 0.5 cm",
+                            image: "../images/productos/comparaciones/087a436_037.png"
+                        },
+                        {
+                            name: "Anillo",
+                            measure: "1.5 x 0.5 cm",
+                            image: "../images/productos/comparaciones/e6b4605_aba.png"
+                        }
+                    ]
                 },
                 {
                     pid: 45,
                     name: "Mini cuadro de papa",
                     detail: "Harina de papa, en forma de láminas cuadradas.",
-                    image: "../images/productos/a2be170_442.jpg"
+                    category: 2,
+                    SKU: "PTPVFI003",
+                    fried_density: "45 ± 4 g/l",
+                    time: "10 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "60",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/a2be170_5c3.jpg",
+                    fried_product_image: "../images/productos/img/595d740_dcf.jpg",
+                    similar_products: [
+                        {
+                            name: "Mini cuadro (Trigo)",
+                            measure: "4.9 cm x 3.2 cm",
+                            image: "../images/productos/comparaciones/29197c0_dfb.png"
+                        },
+                        {
+                            name: "Tocinito 1x3",
+                            measure: "4.9 cm x 3 cm",
+                            image: "../images/productos/comparaciones/22aa77f_2b3.png"
+                        },
+                        {
+                            name: "Mini cuadro (Papa)",
+                            measure: "4.5 cm x 2.7 cm",
+                            image: "../images/productos/comparaciones/390e7d5_819.png"
+                        },
+                        {
+                            name: "Cuadri bacon mini",
+                            measure: "4.2 x 3 cm",
+                            image: "../images/productos/comparaciones/bbbe77b_f2d.png"
+                        },
+                        {
+                            name: "Tocinito micro",
+                            measure: "3.1 cm x 2.9 cm",
+                            image: "../images/productos/comparaciones/814cb6f_1e5.png"
+                        }
+                    ]
                 },
                 {
                     pid: 46,
                     name: "Mini rueda de papa",
                     detail: "Harina de papa, en forma de rueda.",
-                    image: "../images/productos/41fca93_576.jpg"
+                    category: 2,
+                    SKU: "PTPVFI001",
+                    fried_density: "31 ± 3 g/l",
+                    time: "18 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "3.5 - 5 / N/A",
+                    raw_product_image: "../images/productos/img/41fca93_d80.jpg",
+                    fried_product_image: "../images/productos/img/4d58d25_80a.jpg",
+                    similar_products: [
+                        {
+                            name: "Rueda (Trigo)",
+                            measure: "6.2 x 0.4 cm",
+                            image: "../images/productos/comparaciones/d558285_b91.png"
+                        },
+                        {
+                            name: "Mini Rueda (Trigo)",
+                            measure: "4.5 x 0.3 cm",
+                            image: "../images/productos/comparaciones/2fa5f76_dbc.png"
+                        },
+                        {
+                            name: "Mini Rueda (Papa)",
+                            measure: "4.4 x 0.6 cm",
+                            image: "../images/productos/comparaciones/f8bd9d7_7a4.png"
+                        },
+                        {
+                            name: "Mini Rueda Papa Max's",
+                            measure: "4.2 x 0.4 cm",
+                            image: "../images/productos/comparaciones/087b584_d4a.png"
+                        }
+                    ]
                 },
                 {
                     pid: 47,
                     name: "Mini rueda de papa max's",
                     detail: "Harina de papa, en forma de rueda.",
-                    image: "../images/productos/41fca93_89d.jpg"
+                    category: 2,
+                    SKU: "PTPVMX001",
+                    fried_density: "31 ± 3 g/l",
+                    time: "18 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/41fca93_ea3.jpg",
+                    fried_product_image: "../images/productos/img/7a13e1d_b8c.jpg",
+                    similar_products: [
+                        {
+                            name: "Rueda (Trigo)",
+                            measure: "6.2 x 0.4 cm",
+                            image: "../images/productos/comparaciones/d558285_d28.png"
+                        },
+                        {
+                            name: "Mini Rueda (Trigo)",
+                            measure: "4.5 x 0.3 cm",
+                            image: "../images/productos/comparaciones/2fa5f76_257.png"
+                        },
+                        {
+                            name: "Mini Rueda (Papa)",
+                            measure: "4.4 x 0.6 cm",
+                            image: "../images/productos/comparaciones/f8bd9d7_6a1.png"
+                        },
+                        {
+                            name: "Mini Rueda Papa Max's",
+                            measure: "4.2 x 0.4 cm",
+                            image: "../images/productos/comparaciones/087b584_beb.png"
+                        }
+                    ]
                 },
                 {
                     pid: 48,
                     name: "Papa francesa",
                     detail: "Harina de papa, en forma de papa francesa.",
-                    image: "../images/productos/41fca93_89d.jpg"
+                    category: 2,
+                    SKU: "PTPVFI002",
+                    raw_product_image: "../images/productos/img/324100b_488.jpg",
+                    fried_product_image: "../images/productos/img/d09ad13_763.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 49,
                     name: "Veggie sticks natural",
                     detail: "Harina de papa, en forma de palito.",
-                    image: "../images/productos/6f2a9cc_a1b.jpg"
+                    category: 2,
+                    SKU: "PTPVFI007",
+                    fried_density: "56 ± 6 g/l",
+                    time: "17 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "185 ºC / 365 ºF",
+                    sacks_or_boxes_per_pallet: "52",
+                    length_width: "3.2 - 4.2 cm / N/A",
+                    raw_product_image: "../images/productos/img/6f2a9cc_154.jpg",
+                    fried_product_image: "../images/productos/img/a95aa5d_778.jpg",
+                    similar_products: [
+                        {
+                            name: "Palillo",
+                            measure: "11.6 x 1.1 cm",
+                            image: "../images/productos/comparaciones/1815ee3_ff4.png"
+                        },
+                        {
+                            name: "Palito Papa Max's",
+                            measure: "8.9 x 0.9 cm",
+                            image: "../images/productos/comparaciones/d867363_86c.png"
+                        },
+                        {
+                            name: "Papa Francesa (Papa)",
+                            measure: "8.6 x 0.7 cm",
+                            image: "../images/productos/comparaciones/b4a1553_920.png"
+                        },
+                        {
+                            name: "Veggie Sticks",
+                            measure: "5.9 x .5 cm",
+                            image: "../images/productos/comparaciones/02eb21d_0e1.png"
+                        },
+                        {
+                            name: "Papa Francesa (Trigo)",
+                            measure: "5.1 cm x N/A",
+                            image: "../images/productos/comparaciones/988ed58_d75.png"
+                        },
+                        {
+                            name: "Cabellin",
+                            measure: "2.5 cm x N/A",
+                            image: "../images/productos/comparaciones/3015a13_240.png"
+                        }
+                    ]
                 },
                 {
                     pid: 50,
                     name: "Veggie sticks espinaca",
                     detail: "Harina de papa con espinaca en polvo en forma de palito.",
-                    image: "../images/productos/b73b9f0_7f3.jpg"
+                    category: 2,
+                    SKU: "PTPVFI005",
+                    fried_density: "56 ± 6 g/l",
+                    time: "17 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "185 ºC / 365 ºF",
+                    sacks_or_boxes_per_pallet: "52",
+                    length_width: "3.2 - 4.2 cm / N/A",
+                    raw_product_image: "../images/productos/img/b73b9f0_f33.jpg",
+                    fried_product_image: "../images/productos/img/0da0e27_338.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 51,
                     name: "Veggie sticks tomate",
                     detail: "Harina de papa con tomate en polvo en forma de palito.",
-                    image: "../images/productos/d936956_4c4.jpg"
+                    category: 2,
+                    SKU: "PTPVFI006",
+                    fried_density: "56 ± 6 g/l",
+                    time: "17 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "185 ºC / 365 ºF",
+                    sacks_or_boxes_per_pallet: "52",
+                    length_width: "3.2 - 4.2 cm / N/A",
+                    raw_product_image: "../images/productos/img/d936956_b4b.jpg",
+                    fried_product_image: "../images/productos/img/79103f7_a87.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 52,
                     name: "Veggie chip natural",
                     detail: "Harina de papa en forma de óvalos ondulados",
-                    image: "../images/productos/90f7484_ffe.jpg"
+                    category: 2,
+                    SKU: "PPPREF009",
+                    time: "6 - 7 segundos",
+                    temperature: "200 ºC / 392 ºF",
+                    raw_product_image: "../images/productos/img/90f7484_64d.jpg",
+                    fried_product_image: "../images/productos/img/2247b2c_4fc.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 53,
                     name: "Veggie chip espinaca",
                     detail: "Harina de papa con espinaca en polvo en forma de óvalos ondulados.",
-                    image: "../images/productos/ebab3be_274.jpg"
+                    category: 2,
+                    SKU: "PPPREF007",
+                    time: "6 - 7 segundos",
+                    temperature: "200 ºC / 392 ºF",
+                    raw_product_image: "../images/productos/img/ebab3be_6c1.jpg",
+                    fried_product_image: "../images/productos/img/4f546fe_ebe.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 54,
                     name: "Veggie chip tomate",
                     detail: "Harina de papa con tomate en polvo en forma de óvalos ondulados.",
-                    image: "../images/productos/4938c5f_0e4.jpg"
+                    category: 2,
+                    SKU: "PPPREF008",
+                    time: "6 - 7 segundos",
+                    temperature: "200 ºC / 392 ºF",
+                    raw_product_image: "../images/productos/img/4938c5f_bfe.jpg",
+                    fried_product_image: "../images/productos/img/6e5e29d_fe4.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 55,
                     name: "Veggie straw natural",
                     detail: "Harina de papa en forma de tubitos huecos.",
-                    image: "../images/productos/209c911_530.jpg"
+                    category: 2,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/209c911_e17.jpg",
+                    fried_product_image: "../images/productos/img/ac6ed9b_170.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 56,
                     name: "Veggie straw tomate",
                     detail: "Harina de papa con tomate en polvo en forma de tubitos huecos.",
-                    image: "../images/productos/3c1ad02_e56.jpg"
+                    category: 2,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/3c1ad02_e97.jpg",
+                    fried_product_image: "../images/productos/img/c0e4449_e3e.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 57,
                     name: "Veggie straw espinaca",
                     detail: "Harina de papa con espinaca en polvo en forma de tubitos huecos.",
-                    image: "../images/productos/c9be94e_551.jpg"
+                    category: 2,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/c9be94e_70b.jpg",
+                    fried_product_image: "../images/productos/img/963af8d_c6e.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 58,
                     name: "Mix M",
                     detail: "Mezcla de variedad de figuras compuesta por mini rueda de trigo, tocinito 3x1, concha de maíz, aro de cebolla.",
-                    image: "../images/productos/40b1098_a1c.jpg"
+                    category: 2,
+                    SKU: "PTFTBR029",
+                    fried_density: "41 ± 6 g/l",
+                    time: "18 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "190 ºC / 374 ºF",
+                    sacks_or_boxes_per_pallet: "36",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/40b1098_4f0.jpg",
+                    fried_product_image: "../images/productos/img/156005c_20b.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 59,
                     name: "Tortilla de maíz",
                     detail: "Harina de maíz en forma triangular.",
-                    image: "../images/productos/d384f91_2c7.jpg"
+                    category: 3,
+                    SKU: "PMMAIZ006",
+                    fried_density: "45.5 ± 5 g/l",
+                    time: "17 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "52",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/d384f91_40f.jpg",
+                    fried_product_image: "../images/productos/img/24b8e45_bf2.jpg",
+                    similar_products: [
+                        {
+                            name: "Concha",
+                            measure: "5.2 x 3.3 cm",
+                            image: "../images/productos/comparaciones/9b49be1_e24.png"
+                        },
+                        {
+                            name: "Tortilla de Maíz",
+                            measure: "4.5 x 4.4 cm",
+                            image: "../images/productos/comparaciones/b7dc4ed_cd6.png"
+                        }
+                    ]
                 },
                 {
                     pid: 60,
                     name: "Mini tornillo de maíz",
                     detail: "Harina de maíz nixtamalizada, en forma de espiral.",
-                    image: "../images/productos/87e2136_a86.jpg"
+                    category: 3,
+                    SKU: "PMMAIZ007",
+                    fried_density: "45.5 ± 5 g/l",
+                    time: "17 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "200 ºC / 392 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "3 - 4 cm / N/A",
+                    raw_product_image: "../images/productos/img/87e2136_2ea.jpg",
+                    fried_product_image: "../images/productos/img/f3ccdd2_a7b.jpg",
+                    similar_products: [
+                        {
+                            name: "Tubo grande",
+                            measure: "9.8 x 0.5 cm",
+                            image: "../images/productos/comparaciones/6b54bf1_e25.png"
+                        },
+                        {
+                            name: "Tornillo",
+                            measure: "9.1 x 2.2 cm",
+                            image: "../images/productos/comparaciones/502d272_fd2.png"
+                        },
+                        {
+                            name: "Tubo",
+                            measure: "8.1 x 2 cm",
+                            image: "../images/productos/comparaciones/9da78ca_019.png"
+                        },
+                        {
+                            name: "Mini tornillo",
+                            measure: "5.6 x 1.7 cm",
+                            image: "../images/productos/comparaciones/a7dd950_ab8.png"
+                        }
+                    ]
                 },
                 {
                     pid: 61,
                     name: "Concha de maíz",
                     detail: "Harina de maíz nixtamalizada, en forma de concha.",
-                    image: "../images/productos/1fd8480_a39.jpg"
+                    category: 3,
+                    SKU: "PMMAIZ005",
+                    fried_density: "49 ± 6 g/l",
+                    time: "12 segundos",
+                    presentation: "15 kg / 33 lbs",
+                    temperature: "195 ºC / 383 ºF",
+                    sacks_or_boxes_per_pallet: "40",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/87e2136_2ea.jpg",
+                    fried_product_image: "../images/productos/img/f3ccdd2_a7b.jpg",
+                    similar_products: [
+                        {
+                            name: "Concha",
+                            measure: "5.2 x 3.3 cm",
+                            image: "../images/productos/comparaciones/9b49be1_c08.png"
+                        },
+                        {
+                            name: "Tortilla de Maíz",
+                            measure: "4.5 x 4.4 cm",
+                            image: "../images/productos/comparaciones/b7dc4ed_dfe.png"
+                        }
+                    ]
                 },
                 {
                     pid: 62,
                     name: "Churrito de Maíz",
                     detail: "Harina de maíz, en forma de de tubo",
-                    image: "../images/productos/1cc8d9a_d1f.jpg"
+                    category: 3,
+                    SKU: "PMMAIZ008",
+                    presentation: "20 kg",
+                    raw_product_image: "../images/productos/img/1cc8d9a_067.jpg",
+                    fried_product_image: "../images/productos/img/c0bd651_e8c.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 63,
                     name: "Veggie chip natural",
                     detail: "Harina de papa, almidón de maíz, sal yodada y cúrcuma.",
-                    image: "../images/productos/90f7484_a93.jpg"
+                    category: 3,
+                    SKU: "PPPREF009",
+                    raw_product_image: "../images/productos/img/90f7484_d27.jpg",
+                    fried_product_image: "../images/productos/img/2247b2c_f55.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 64,
                     name: "Veggie chip espinaca",
                     detail: "Harina de papa, almidón de maíz, sal yodada, y cúrcuma con espinaca en polvo.",
-                    image: "../images/productos/ebab3be_6d7.jpg"
+                    category: 3,
+                    SKU: "PPPREF009",
+                    raw_product_image: "../images/productos/img/ebab3be_28d.jpg",
+                    fried_product_image: "../images/productos/img/4f546fe_fb8.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 65,
                     name: "Veggie chip tomate",
                     detail: "Harina de papa, almidón de maíz, sal yodada, y cúrcuma, con tomate y betabel en polvo.",
-                    image: "../images/productos/060874d_1d0.jpg"
+                    category: 3,
+                    SKU: "PPPREF008",
+                    time: "6 - 7 segundos",
+                    temperature: "200 ºC / 392 ºF",
+                    raw_product_image: "../images/productos/img/4938c5f_43e.jpg",
+                    fried_product_image: "../images/productos/img/6e5e29d_a33.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 66,
                     name: "Veggie straw natural",
                     detail: "Hojuela de papa, granulo de papa, almidón de papa, sal yodada y cúrcuma.",
-                    image: "../images/productos/02a82d7_87a.jpg"
+                    category: 3,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/02a82d7_015.jpg",
+                    fried_product_image: "../images/productos/img/3260721_bd7.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 67,
                     name: "Veggie straw tomate",
                     detail: "Hojuela de papa, granulo de papa, almidón de papa, sal yodada, tomate y betabel en polvo.",
-                    image: "../images/productos/926eff3_f08.jpg"
+                    category: 3,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/926eff3_33b.jpg",
+                    fried_product_image: "../images/productos/img/7c17642_686.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 68,
                     name: "Veggie straw espinaca",
                     detail: "Hojuela de papa, granulo de papa, almidón de papa, sal yodada y espinaca en polvo.",
-                    image: "../images/productos/0ee02ab_7ef.jpg"
+                    category: 3,
+                    SKU: "",
+                    time: "8-11 segundos",
+                    temperature: "195 ºC / 383 ºF",
+                    raw_product_image: "../images/productos/img/0ee02ab_d87.jpg",
+                    fried_product_image: "../images/productos/img/05a156c_6c7.jpg",
+                    similar_products: []
                 },
                 {
                     pid: 69,
                     name: "Mix M",
                     detail: "Mezcla de variedad de figuras compuesta por mini rueda de trigo, tocinito 3x1, concha de maíz, aro de cebolla.",
-                    image: "../images/productos/40b1098_451.jpg"
+                    category: 3,
+                    SKU: "PTFTBR029",
+                    fried_density: "41 ± 6 g/l",
+                    time: "18 segundos",
+                    presentation: "20 kg / 44 lbs",
+                    temperature: "190 ºC / 374 ºF",
+                    sacks_or_boxes_per_pallet: "36",
+                    length_width: "N/A",
+                    raw_product_image: "../images/productos/img/40b1098_e48.jpg",
+                    fried_product_image: "../images/productos/img/156005c_6c1.jpg",
+                    similar_products: []
                 }
             ];
 
@@ -622,5 +2008,57 @@
     title_bc_element.append(product_selected.name);
     line_element.append(product_selected.name);
     line_bc_element.append(categories[product_selected.category]);
+
+    //image change src
+    document.getElementById("raw-product-image").src = product_selected.raw_product_image;
+    document.getElementById("fried-product-image").src = product_selected.fried_product_image;
+    definition_details_element = document.getElementById("definition-details");
+    var html_definition_details = "<div class='w-half'>";
+                
+    if(product_selected.detail) {
+        html_definition_details += "<h2 class='item-title-red'><i>Description</i></h2><p>"+product_selected.detail+"</p>";
+    }
+    if(product_selected.SKU) {
+        html_definition_details += "<h2 class='item-title-red'><i>SKU</i></h2><p>"+product_selected.SKU+"</p>";
+    }
+    html_definition_details += "</div>";
+    html_definition_details += " <div class='w-quarter'>"
+    if(product_selected.fried_density) {
+        html_definition_details += "<h2 class='item-title-red'><i>Expanded Bulk Density</i></h2><p>"+product_selected.fried_density+"</p>";
+    }
+    if(product_selected.time) {
+        html_definition_details += "<h2 class='item-title-red'><i>Time (seg.)</i></h2><p>"+product_selected.time+"</p>";
+    }
+
+    if(product_selected.presentation) {
+        html_definition_details += "<h2 class='item-title-red'><i>Presentation</i></h2><p>"+product_selected.presentation+"</p>";
+    }
+    html_definition_details += "</div>";
+    html_definition_details += " <div class='w-quarter'>"
+    if(product_selected.temperature) {
+        html_definition_details += "<h2 class='item-title-red'><i>Temperature</i></h2><p>"+product_selected.temperature+"</p>";
+    }
+    if(product_selected.sacks_or_boxes_per_pallet) {
+        html_definition_details += "<h2 class='item-title-red'><i>Sacks or boxes per pallet</i></h2><p>"+product_selected.sacks_or_boxes_per_pallet+"</p>";
+    }
+    if(product_selected.length_width) {
+        html_definition_details += "<h2 class='item-title-red'><i>Length / Width (cm)</i></h2><p>"+product_selected.length_width+"</p>";
+    }
+    html_definition_details += "</div>";
+
+    definition_details_element.innerHTML  = html_definition_details;
+
+    if(product_selected.similar_products.length) {
+        var list_similar_products_element = document.getElementById("similar-products");
+        var html_similar_products = "<div class='text-center bt-gray'><div class='item-title-red'><i><strong>Similar Products Size Comparison</strong></i></div><br><div class='subtitle'><i><strong>Snacks Size Comparison</strong></i></div><div class='container flex-container flex-wrap' id='list-similar-products'>";
+        for (let index = 0; index < product_selected.similar_products.length; index++) {
+            const similar_product = product_selected.similar_products[index];
+            html_similar_products += "<div class='w-quarter similar-product'><figure><img class='img-responsive' src='"+similar_product.image+"' alt='"+similar_product.name+" "+similar_product.measure+"'></figure><strong class='title product-title'><i>"+similar_product.name+"</i></strong><p>"+similar_product.measure+"</p></div> ";
+        }
+        list_similar_products_element.innerHTML  = html_similar_products+"</div></div>";
+    }
+    
+
+    
 
 </script>
