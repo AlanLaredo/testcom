@@ -104,43 +104,45 @@
             </div>
             <div class="contact-item">
                 <div class="item-title-red"><i><h2>¿Dudas o Comentarios?</h2></i></div>
-                <div class="flex-container direction-row">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Name" name="Name" placeholder="Nombre">
+                <form method="post" action="process-contacto.php" target="_blank">
+                    <div class="flex-container direction-row">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Name" name="Name" placeholder="Nombre">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Company" name="Company" placeholder="Compañia">
+                        </div>
                     </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Company" name="Company" placeholder="Compañia">
+                    <div class="flex-container direction-row">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Telefono">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+                        </div>
+                    </div>                
+                    <div class="flex-container direction-row">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Country" name="Country" placeholder="País">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="State" name="State" placeholder="Estado">
+                        </div>
                     </div>
-                </div>
-                <div class="flex-container direction-row">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Telefono">
+                    <div class="flex-container direction-column">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="City" name="City" placeholder="Ciudad">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Message" name="Message" placeholder="Mensaje...">
+                        </div>
                     </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+                    <div class="flex-container">
+                        <div>
+                            <button type="submit" class="button">ENVIAR MENSAJE</button>
+                        </div>
                     </div>
-                </div>                
-                <div class="flex-container direction-row">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Country" name="Country" placeholder="País">
-                    </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="State" name="State" placeholder="Estado">
-                    </div>
-                </div>
-                <div class="flex-container direction-column">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="City" name="City" placeholder="Ciudad">
-                    </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Message" name="Message" placeholder="Mensaje...">
-                    </div>
-                </div>
-                <div class="flex-container">
-                    <div>
-                        <button class="button">ENVIAR MENSAJE</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="direction-column main-width">

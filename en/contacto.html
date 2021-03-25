@@ -104,41 +104,43 @@
             </div>
             <div class="contact-item">
                 <div class="item-title-red"><i><h2>Questions?</h2></i></div>
-                <div class="flex-container direction-row">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Name" name="Name" placeholder="Name">
+                <form method="post" action="../process-contacto.php" target="_blank">
+                    <div class="flex-container direction-row">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Name" name="Name" placeholder="Name">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Company" name="Company" placeholder="Company">
+                        </div>
                     </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Company" name="Company" placeholder="Company">
+                    <div class="flex-container direction-row">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Phone">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+                        </div>
+                    </div>                
+                    <div class="flex-container direction-row">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Country" name="Country" placeholder="Country">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="State" name="State" placeholder="State">
+                        </div>
                     </div>
-                </div>
-                <div class="flex-container direction-row">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Phone">
+                    <div class="flex-container direction-column">
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="City" name="City" placeholder="City">
+                        </div>
+                        <div class="form-element">
+                            <input type="text" class="form-control" id="Message" name="Message" placeholder="Message...">
+                        </div>
                     </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
-                    </div>
-                </div>                
-                <div class="flex-container direction-row">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Country" name="Country" placeholder="Country">
-                    </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="State" name="State" placeholder="State">
-                    </div>
-                </div>
-                <div class="flex-container direction-column">
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="City" name="City" placeholder="City">
-                    </div>
-                    <div class="form-element">
-                        <input type="text" class="form-control" id="Message" name="Message" placeholder="Message...">
-                    </div>
-                </div>
-                <div class="flex-container">
-                    <div>
-                        <button class="button">SEND</button>
+                    <div class="flex-container">
+                        <div>
+                            <button type="submit" class="button">SEND</button>
+                        </div>
                     </div>
                 </div>
             </div>
