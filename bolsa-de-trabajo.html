@@ -64,7 +64,7 @@
         <div class="flex-container main-width">
             <div class=" flex-container direction-column contact-item aling-center justify-center align-center ">
                 <div class="item-title-red"><i><h2>Aplica ahora</h2></i></div>
-                <form method="POST" enctype="multipart/form-data" action="process-bolsa.php" target="_blank">
+                <form method="POST" enctype="multipart/form-data" id="form-bolsa" action="process-bolsa.php" target="_blank">
                     <div class="flex-container direction-row w-full">
                         <div class="form-element">
                             <input type="text" class="form-control" id="Name" name="Name" placeholder="Nombre">
@@ -103,6 +103,90 @@
             </div>
         </div>
     </div>
+<script>
+	$(function(){
+		$( "#form-bolsa" ).validate({
+			errorElement: "div",
+			rules: {
+				Name: { required: true },
+				Email: { required: true, email: true },
+				Message: { required: true },
+				"g-recaptcha-response": { required: true },
+				cv: { accept: "jpg|jpeg|pjpeg|png|pdf|docx|dotx|pptx|potx|ppsx", filesize: 9437184 },
+			},
+			messages: {
+			 	"cv": {
+                    accept: "Sólo se permiten imágenes, pdf, word o power point",
+                    filesize: "El cv debe ser menor a 9mb"
+                },
+                "Email": {
+                    email: "Por favor proporciona un email válido"
+                }
+			},
+			success: "valid",
+			submitHandler: function() {
+
+				var form = $("#form-bolsa");
+				var spinner = form.find(".loading");
+				var button = form.find("button[type='submit']");
+
+	            var cv = document.getElementById("cv");
+	            var cv = cv.files[0];
+
+	            var datos = form.serialize();
+
+	            var data = new FormData();
+				data.append('datos', datos);
+				data.append('cv', cv);
+				data.append('submit', 'Guardar');
+
+				// ---------------------------------------------------------------
+				var jqxhr = $.ajax({
+					url: 'process-bolsa.php',
+					type: 'POST',
+					data: data,
+					contentType: false,
+					processData: false,
+					cache: false,
+					beforeSend: function(){
+						spinner.css("display","inline-block");
+						button.prop('disabled', true);
+					}
+				});
+				jqxhr.done(function( data ) {
+alert(1);
+					spinner.fadeOut("fast");
+					button.prop('disabled', false);
+
+					if( data.exito == true ) {
+
+						//MOSTRAR MENSAJE
+						form[0].reset();
+						grecaptcha.reset();
+
+	                    $('.msggracias').slideDown(300, function(){
+				        	$(this).delay(5000).slideUp(300);
+				    	});
+
+					} else {
+						//MOSTRAR MENSAJE
+	                    $('.msgnoenviado').text( data.msj ).slideDown(300,function(){
+					        $(this).delay(3000).slideUp(300);
+					    });
+					}
+				});
+				jqxhr.fail( function(jqXHR) {
+alert(3);
+					var jsonValue = jQuery.parseJSON( jqXHR.responseText );
+					console.log(jsonValue.Message);
+				} );
+				// ---------------------------------------------------------------
+			}
+
+		});
+
+	});
+    </script>
     <footer>
         <div class="container flex-container">
             <div class="footer-logo">
