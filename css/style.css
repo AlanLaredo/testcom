@@ -511,24 +511,25 @@ footer div  {
 .navigation-menu {
     height: 100%;
     max-height: 850px;
+    height: 850px;
     overflow: hidden;
 }
 
 .i-want-start-my-business {
-    background-image: linear-gradient(#00000003, #00000003),url("../images/pic-btn-negocio.jpg" );
+    background-image: url("../images/pic-btn-negocio.jpg" );
     flex: 0 0 25vw;
 }
 .i-am-fryer {
-    background-image: linear-gradient(#00000003, #00000003),url("../images/pic-btn-freidor.jpg" );
+    background-image: url("../images/pic-btn-freidor.jpg" );
     flex: 0 0 25vw;
 }
 .i-am-wholesaler {
-    background-image: linear-gradient(#00000003, #00000003),url("../images/pic-btn-mayorista.jpg" );
+    background-image: url("../images/pic-btn-mayorista.jpg" );
     flex: 0 0 25vw;
     background-size: 100% 100%;
 }
 .i-am-manufacturer {
-    background-image: linear-gradient(#00000003, #00000003),url("../images/pic-btn-industrial.jpg" );
+    background-image: url("../images/pic-btn-industrial.jpg" );
     flex: 0 0 25vw;
 }
 .index-menu-option-title div { 
@@ -582,8 +583,9 @@ footer div  {
 }
 
 .our-company-container {
-    background-image: linear-gradient(#00000026, #00000026),url("../images/mb-home.jpg");
+    background-image:url("../images/mb-home.jpg");
     padding: 70px 0;
+    height: 600px;
     min-height: 600px;
     border-top: 1px solid white;
     background-size: 100%;
@@ -814,9 +816,9 @@ footer div  {
 #banner-products-category {
     position: relative;
     z-index: -1;
+height:800px;
 }
-
-#banner-products-category span{
+#banner-products-category span {
     position: absolute;
     bottom: 140px;
     left: 0;
@@ -827,7 +829,6 @@ footer div  {
     font-size: 36px;
     font-weight: normal;
 }
-
 #banner-products-category.banner-wheat-line {
     background-image: url("../images/productos/596f66a_ffd.jpg" );
     height: 380px;
@@ -841,6 +842,24 @@ footer div  {
 #banner-products-category.banner-corn-line {
     background-image: url("../images/productos/4a8c9bb_6ba.jpg" );
     height: 380px;
+}
+
+
+.banner-wheat-line-menu {
+    background-image: url("../images/b-trigo.jpg" );
+    flex: 0 0 25vw;
+}
+.banner-potato-line-menu {
+    background-image: url("../images/b-papa.jpg" );
+    flex: 0 0 25vw;
+}
+.banner-corn-line-menu {
+    background-image: url("../images/b-maiz.jpg" );
+    flex: 0 0 25vw;
+}
+.banner-suncereal-line-menu {
+    background-image: url("../images/b-suncereal.jpg" );
+    flex: 0 0 25vw;
 }
 
 .product {
