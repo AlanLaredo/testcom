@@ -1,3 +1,4 @@
+window.onload = function(){
     //Obtener categoria seleccionada 
     const category_selected = GetURLParameter('categoria')
 
@@ -24,7 +25,7 @@
             break;
         case 57:
             title = "Potato line"
-            banner_image_class = "banne-potato-line"
+            banner_image_class = "banner-potato-line"
             break;
         case 59:
             title = "Wheat line"
@@ -648,16 +649,16 @@
         crudo_imagen: "../images/productos/img/40b1098_10a.jpg",
         frito_imagen: "../images/productos/img/156005c_dc1.jpg",
         producto_image: "../images/productos/40b1098_0b5.jpg", descripcion: "Mix of shapes formed by Mini Wheel, Bacon 3x1, Corn Shell and Onion Ring.", sku: "PTFTBR029", informacion: [ {"Expanded Bulk Density":"41 ± 6 g/l"}, {"Temperature":"190 ºC / 374 ºF"}, {"Time (sec)":"18 seconds"}, {"Sacks or boxes per pallet":"36"}, {"Presentation":"20 kg / 44 lbs"}, {"Length / Width (cm)":"N/A"},]},];
-    products = products.filter(p=>p.categoria_id == category_selected)
+    
+    products = products.filter(function(p) {return p.categoria_id == category_selected})
 
     var banner_element = document.getElementById("banner-products-category");
     banner_element.classList.add(banner_image_class);
-    
     var title_bc_element = document.getElementById("product-category-b-title");
-    title_bc_element.append(title);
+    title_bc_element.innerHTML = title;
 
     var title_element = document.getElementById("product-category-title");
-    title_element.append(title);
+    title_element.innerHTML = title;
 
     var products_listing_element = document.getElementById("products-listing");
     var new_products_listing_element = document.getElementById("new-products-listing");
@@ -665,17 +666,18 @@
     var html_products = '';
     var html_new_products = '';
 
-    let total_products = products.filter(p=> p.es_nuevo == 0)
-    let total_new_products = products.filter(p=> p.es_nuevo == 1)
+   let total_products = products.filter(function(p){return p.es_nuevo == 0})
+    let total_new_products = products.filter(function(p){return p.es_nuevo == 1})
 
-    total_products.forEach(product => {
+    total_products.forEach(function(product) {
         html_products += "<div class='justify-center product'><a href='producto.html?pid="+product.producto_id+"'><figure><img src='"+product.producto_image+"' height='237' width='266' alt='"+product.nombre+"'><img src='../images/plus-hover.svg' class='hov' aria-hidden='true' alt='Icono +'></figure><h2><i>"+product.nombre+"</i></h2><p>"+product.descripcion+"</p></a></div>";
     });
     
     products_listing_element.innerHTML  = html_products;
 
-    total_new_products.forEach(product => {
+    total_new_products.forEach(function(product) {
         html_new_products += "<div class='justify-center product'><a href='producto.html?pid="+product.producto_id+"'><figure><img src='"+product.producto_image+"' height='237' width='266' alt='"+product.nombre+"'><img src='../images/plus-hover.svg' class='hov' aria-hidden='true' alt='Icono +'></figure><h2><i>"+product.nombre+"</i></h2><p>"+product.descripcion+"</p></a></div>";
     });
     
     new_products_listing_element.innerHTML  = html_new_products;
+}

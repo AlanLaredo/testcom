@@ -1,4 +1,7 @@
-    //Obtener categoria seleccionada 
+window.onload = function(){
+    /*Place your all JavaScript code here*/
+
+//Obtener categoria seleccionada 
     const pid_selected = GetURLParameter('pid')
 
     function GetURLParameter(sParam)
@@ -638,13 +641,19 @@
         frito_imagen: "images/productos/img/156005c_dc1.jpg",
         producto_image: "images/productos/40b1098_0b5.jpg", descripcion: "Mezcla de variedad de figuras compuesta por mini rueda de trigo, tocinito 3x1, concha de maíz, aro de cebolla.", sku: "PTFTBR029", informacion: [ {"Densidad frito":"41 ± 6 g/l"}, {"Temperatura":"190 ºC / 374 ºF"}, {"Tiempo (seg.)":"18 segundos"}, {"Sacos o cajas por tarima":"36"}, {"Presentación":"20 kg / 44 lbs"}, {"Largo / Ancho (cm)":"N/A"},]},]
 
-    const product_selected = products.find(product => product.producto_id == pid_selected);
+    let product_selected = null
+    products.forEach(function(p){  
+        if(p.producto_id == pid_selected)
+        {
+            product_selected = p 
+        }
+    });
     var line_bc_element = document.getElementById("product-b-line");
     var line_element = document.getElementById("product-title");
     var title_bc_element = document.getElementById("product-b-title");
-    title_bc_element.append(product_selected.nombre);
-    line_element.append(product_selected.nombre);
-    line_bc_element.append(product_selected.categoria);
+    title_bc_element.innerHTML = product_selected.nombre;
+    line_element.innerHTML =product_selected.nombre;
+    line_bc_element.innerHTML = product_selected.categoria;
 
     document.getElementById("raw-product-image").src = product_selected.crudo_imagen;
     document.getElementById("fried-product-image").src = product_selected.frito_imagen;
@@ -664,7 +673,7 @@
     html_definition_details += "<div class='flex-container main-width p-60'>";
     html_definition_details     += "    <div class='flex-container w-full flex-wrap'>"
 
-    info.forEach(i => {
+    info.forEach(function(i){
         html_definition_details += "<div class='w-half'><h2 class='item-title-red'><i>"+Object.getOwnPropertyNames(i)[0]+"</i></h2><p>"+i[Object.getOwnPropertyNames(i)[0]]+"</p></div>";
     })
 
@@ -676,8 +685,10 @@
    if(product_selected.comparaciones.length) {
         var list_similar_products_element = document.getElementById("similar-products");
         var html_similar_products = "<div class='text-center bt-gray'><div class='item-title-red'><i><strong>Comparación de tamaños productos similares</strong></i></div><br><div class='subtitle'><i><strong>Comparación en frito</strong></i></div><div class='container flex-container flex-wrap' id='list-similar-products'>";
-        product_selected.comparaciones.forEach(p=> {
+        product_selected.comparaciones.forEach(function(p){
             html_similar_products += "<div class='w-quarter similar-product'><figure><img class='img-responsive' src='"+p.imagen+"' alt='"+p.nombre+" "+p.size+"'></figure><strong class='title product-title'><i>"+p.nombre+"</i></strong><p>"+p.size+"</p></div> ";
         })
         list_similar_products_element.innerHTML  = html_similar_products+"</div></div>";
     }
+
+}
