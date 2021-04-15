@@ -673,16 +673,17 @@ window.onload = function(){
     html_definition_details += "<div class='flex-container main-width p-60'>";
     html_definition_details     += "    <div class='flex-container w-full flex-wrap'>"
 
-    info.forEach(function(i){
-        html_definition_details += "<div class='w-half'><h2 class='item-title-red'><i>"+Object.getOwnPropertyNames(i)[0]+"</i></h2><p>"+i[Object.getOwnPropertyNames(i)[0]]+"</p></div>";
-    })
+    if(info)
+        info.forEach(function(i){
+            html_definition_details += "<div class='w-half'><h2 class='item-title-red'><i>"+Object.getOwnPropertyNames(i)[0]+"</i></h2><p>"+i[Object.getOwnPropertyNames(i)[0]]+"</p></div>";
+        })
 
     html_definition_details += "    </div>";
     html_definition_details += "</div>";
 
     definition_details_element.innerHTML  = html_definition_details;
 
-   if(product_selected.comparaciones.length) {
+   if(product_selected.comparaciones && product_selected.comparaciones.length>=1) {
         var list_similar_products_element = document.getElementById("similar-products");
         var html_similar_products = "<div class='text-center bt-gray'><div class='item-title-red'><i><strong>Comparación de tamaños productos similares</strong></i></div><br><div class='subtitle'><i><strong>Comparación en frito</strong></i></div><div class='container flex-container flex-wrap' id='list-similar-products'>";
         product_selected.comparaciones.forEach(function(p){

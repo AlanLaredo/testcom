@@ -633,8 +633,8 @@ window.onload = function(){
 
 
     let product_selected = null
-    products.forEach(function(p) {  if(p.producto_id == pid_selected) product_selected = p });
 
+    products.forEach(function(p) {  if(p.producto_id == pid_selected) product_selected = p });
 
     var line_bc_element = document.getElementById("product-b-line");
     var line_element = document.getElementById("product-title");
@@ -661,6 +661,7 @@ window.onload = function(){
     html_definition_details += "<div class='flex-container main-width p-60'>";
     html_definition_details     += "    <div class='flex-container w-full flex-wrap'>"
 
+    if(info)
     info.forEach(function(i) {
         html_definition_details += "<div class='w-half'><h2 class='item-title-red'><i>"+Object.getOwnPropertyNames(i)[0]+"</i></h2><p>"+i[Object.getOwnPropertyNames(i)[0]]+"</p></div>";
     })
