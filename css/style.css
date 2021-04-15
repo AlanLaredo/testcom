@@ -251,6 +251,9 @@ ol.breadcrumb {
 .p-3 {
     padding: 3px;
 }
+.p-4 {
+    padding: 4px;
+}
 .p-8 {
     padding: 8px;
 }
@@ -339,7 +342,15 @@ ol.breadcrumb {
 .wpx-450 {
     width: 450px;
 }
-
+.hpx-170 {
+    height: 170px;
+}
+.hpx-300 {
+    height: 300px;
+}
+.hpx-400 {
+    height: 400px;
+}
 .h-150 {
     height: 150px !important;
 }
@@ -357,6 +368,15 @@ ol.breadcrumb {
 }
 .h-950 {
     height: 950px;    
+}
+.h-1050 {
+    height: 1050px;    
+}
+.h-1177 {
+    height: 1177px;    
+}
+.h-1250 {
+    height: 1250px;    
 }
 .list-style-none, .list-style-none ul {
    list-style-type: none;
@@ -512,12 +532,12 @@ footer div  {
     height: 100%;
     max-height: 850px;
     overflow: hidden;
+    height: 850px;
 }
 
 .i-want-start-my-business {
     background-image: url("../images/pic-btn-negocio.jpg" );
     flex: 0 0 25vw;
-    height: 880px;
 }
 .i-am-fryer {
     background-image: url("../images/pic-btn-freidor.jpg" );
@@ -760,6 +780,12 @@ footer div  {
 }
 /*-----------------------------------END CATALOG.HTML STYLES-----------------------------------*/
 /*-----------------------------------CONTACTO.HTML STYLES-----------------------------------*/
+.opacity-0 {
+    opacity: 0;
+}
+.inputForm {
+    position: absolute;
+}
 .contact-title {
     height: 300px;
     background-image: url("../images/banner-bolsa-trabajo-md2.jpg");
