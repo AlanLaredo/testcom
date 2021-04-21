@@ -565,8 +565,6 @@ footer div  {
 
 }
 
-
-
 .index-menu-option-title div { 
     margin-bottom: 10px;
 }
@@ -775,23 +773,29 @@ footer div  {
 .wheat-line {
     background-image: url("../images/b-trigo.jpg" );
     flex: 0 0 25vw;
-    height: 880px;
+    background-size: 100% 100%;
+
 }
 
 .potato-line {
     background-image: url("../images/b-papa.jpg" );
     flex: 0 0 25vw;
+    background-size: 100% 100%;
+
 }
 
 .corn-line {
     background-image: url("../images/b-maiz.jpg" );
     flex: 0 0 25vw;
     background-size: 100% 100%;
+
 }
 
 .suncereal {
     background-image: url("../images/b-suncereal.jpg" );
     flex: 0 0 25vw;
+    background-size: 100% 100%;
+
 }
 /*-----------------------------------END CATALOG.HTML STYLES-----------------------------------*/
 /*-----------------------------------CONTACTO.HTML STYLES-----------------------------------*/
