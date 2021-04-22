@@ -16,6 +16,9 @@ body {
     margin: 0;
     background: #f8f8f8;
 }
+.no-bg {
+    background: white;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -1167,6 +1170,7 @@ footer div  {
 
 .product-image #fried-product-image {
     display:none;
+    margin: auto;
 }
 
 .change-product-view:hover +  .product-image>#fried-product-image {
