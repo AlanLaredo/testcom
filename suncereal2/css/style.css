@@ -1,0 +1,1437 @@
+/*-----------------------------------GLOBAL&THEME STYLES-----------------------------------*/
+@import url(fonts.css?family=Noto+Sans:400,700,400italic);
+* {
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+html {
+    font-family: 'Noto Sans',sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    background: #f8f8f8;
+}
+.no-bg {
+    background: white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #102638; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.item-title-red, .item-title-red i , .item-title-red h2 {
+    color: #e9212d;
+    font-size: 24px;
+    padding: 0;
+    font-family: PTBoldItalic;
+}
+.item-title-white, .item-title-white i , .item-title-white h2, .item-title-white a {
+    color: white;
+    padding: 0;
+    font-family: PTBoldItalic;
+}
+.title-15 {
+    font-size: 15px;
+}
+.title-32 {
+    font-size: 32px;
+}
+.item-content, .item-content p, .item-content i, .item-content h1 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #102638;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.main-option-title {
+    flex: 0 0 25vw;
+}
+
+.main-option-title span {
+    padding: 3px 5px;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: PTBoldItalic;
+}
+
+.wheat-color {
+    background: rgba(206,33,58, 1);
+}
+
+.potato-color {
+    background: rgba(38,63,84, 1);
+}
+
+.corn-color {
+    background-color: rgba(82,135,70, 1);
+}
+
+.suncereal-color {
+    background-color: rgba(62,64,64, 1);
+}
+
+.main-width {
+    width: 1170px;
+    margin: auto;
+}
+.title i,.title span,.title h1, .subtitle i {
+    color: #102638;
+    line-height: 1.1;    
+    font-family: PTItalic;
+    font-size: 36px;
+}
+.bcrumbs {
+    padding: 20px;
+    background: #e5e5e5;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.breadcrumb {
+    padding: 20px;
+    color: #7d7d7d;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.breadcrumb>li {
+    display: inline-block;
+}
+
+ol.breadcrumb {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+/*-----------------------------------END GLOBAL&THEME STYLES-----------------------------------*/
+/*-----------------------------------FLEXBOX STYLES-----------------------------------*/
+.d-flex {
+    display: flex;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: end;
+}
+.align-stretch {
+    align-items: stretch;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.direction-row {
+    flex-direction: row;
+}
+.direction-column {
+    flex-direction: column;
+}
+.flex-item {
+}
+.bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-right {
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.flex-grow-2 {
+    flex-grow: 2;
+}
+.flex-grow-3 {
+    flex-grow: 3;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-shrink-3 {
+    flex-shrink: 4;
+}
+
+/*-----------------------------------END FLEXBOX STYLES-----------------------------------*/
+/*-----------------------------------GENERAL STYLES-----------------------------------*/
+/*  COLORS  */
+.color-white, .color-white a, .color-white i, .color-white h1 {
+    color: white;
+}
+.color-red, .color-red a {
+    color: #e9212d;
+}
+.color-gray, .color-gray a {
+    color: gray;
+}
+.color-blue {
+    color: #102638;
+}
+.bg-color-bluelight {
+    background: #2d3f4d;
+}
+.bg-color-red {
+    background-color: #e9212d;
+}
+.bg-color-blue {
+    background-color: #102639;
+}
+.bg-color-orange {
+    background-color: #e3391f;
+}
+.bg-color-green {
+    background-color: #18a552;
+}
+/*  OPACITY  */
+.opacity-4 {
+    opacity: .4;
+}
+.opacity-6 {
+    opacity: .6;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.absolute-top {
+    position: absolute;
+    top:0;
+}
+.p-0 {
+    padding: 0 !important;
+}
+.p-3 {
+    padding: 3px;
+}
+.p-4 {
+    padding: 4px;
+}
+.p-8 {
+    padding: 8px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-30 {
+    padding: 30px;
+}
+.p-60 {
+    padding: 60px;
+}
+.px-60 {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-150 {
+    padding-bottom: 150px;
+}
+.pl-60 {
+    padding-left: 60px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-70 {
+    margin-top: 70px;
+}
+.m-20 {
+    margin: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.lh-2 {
+    line-height: 2;
+}
+.lh-3 {
+    line-height: 3;
+}
+.button {
+    margin-top:  15px;
+    font-weight: 500;
+    padding: 15px;
+    border: 0px;
+    border-radius: 6px; 
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625;
+}
+.w-260 {
+    width: 260px;
+}
+.w-450 {
+    width: 450px;
+}
+.w-750 {
+    width: 750px;
+}
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.w-quarter {
+    width: 25%;
+}
+
+.h-full {
+    height: 100%;
+}
+.h-100vh {
+    height:100vh;
+}
+.wpx-450 {
+    width: 450px;
+}
+.hpx-170 {
+    height: 170px;
+}
+.hpx-300 {
+    height: 300px;
+}
+.hpx-400 {
+    height: 400px;
+}
+.h-150 {
+    height: 150px !important;
+}
+.h-450 {
+    height: 450px;
+}
+.h-500 {
+    height: 500px;
+}
+.h-600 {
+    height: 600px;
+}
+.h-800 {
+    height: 800px;    
+}
+.h-950 {
+    height: 950px;    
+}
+.h-1050 {
+    height: 1050px;    
+}
+.h-1177 {
+    height: 1177px;    
+}
+.h-1250 {
+    height: 1250px;    
+}
+.list-style-none, .list-style-none ul {
+   list-style-type: none;
+}
+.line-height-2 {
+    line-height: 2;
+}
+.line-height-3 {
+    line-height: 3;
+}
+.br-blue {
+    border-right: 1px solid #102638;
+}
+.br-white {
+    border-right: 1px solid white;
+}
+.bb-white {
+    border-bottom: 1px solid white;
+}
+.bb-blue {
+    border-bottom: 1px solid #102638;
+}
+.bl-blue {
+    border-left: 1px solid #102638;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.hover-red-border-10:hover {
+    border: 10px solid #e9212d;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.mix-blend-multiply, .mix-blend-multiply img {
+    mix-blend-mode: multiply;
+}
+.red-circle {
+    background: #e9212d;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+.bluelight-circle {
+    background: #91b9d2;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+.bb-gray {
+    border-bottom: 1px solid #a8a7a7;
+}
+.bt-gray {
+    border-top: 1px solid #a8a7a7;
+}
+/*-----------------------------------END GENERAL STYLES-----------------------------------*/
+/*-----------------------------------DEV STYLES-----------------------------------*/
+.dev-br {
+    border: 1px solid red;
+}
+.dev-bb {
+    border: 1px solid blue;
+}
+.dev-bk-red {
+    background: red;
+}
+.a-expand {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+/*-----------------------------------END DEV STYLES-----------------------------------*/
+/*-----------------------------------HEADER STYLES-----------------------------------*/
+.header {
+    background: #f8f8f8;
+    text-transform: uppercase;
+}
+.header #menu div:nth-child(3) a{
+    border-left: 1px solid #102638;
+}
+.header a, .header p, .header span {
+    color: #102638;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.header, footer, article, nav, aside {
+    padding: 1em;
+}
+
+header a.selected {
+    color: #e9212d;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+.header-phone {
+    color: #102638;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 0px !important;
+}
+.header-phone a {
+    padding-right: 0px !important;
+}
+.header-phone span {
+    padding-left: 5px !important;
+}
+/*-----------------------------------END HEADER STYLES-----------------------------------*/
+/*-----------------------------------FOOTER STYLES-----------------------------------*/
+footer {
+  
+}
+footer ul {
+    list-style-type: none !important;
+    padding-left: 0;
+}
+footer li {
+    margin: 0px 0 12px 0;
+    color: #4d687f;
+}
+footer div  {
+    width: 100%;
+}
+.footer-logo {
+    padding-top: 30px;
+    padding-left: 10px;
+    width: 300px;
+}
+.footer-raise-your-voice {
+    width: 285px;
+}
+.footer-raise-your-voice img {
+    height: 70px;
+}
+/*-----------------------------------END FOOTER STYLES-----------------------------------*/
+/*-----------------------------------INDEX.HTML STYLES-----------------------------------*/
+.navigation-menu {
+    height: 100%;
+    max-height: 628px;
+    overflow: hidden;
+    height: 650px;
+}
+.i-want-start-my-business {
+    background-image: url("../images/pic-btn-negocio.jpg" );
+    height: 629px;
+    width: 353px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.i-am-fryer {
+    background-image: url("../images/pic-btn-freidor.jpg" );
+    height: 629px;
+    width: 353px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.i-am-wholesaler {
+    background-image: url("../images/pic-btn-mayorista.jpg" );
+    height: 629px;
+    width: 353px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.i-am-manufacturer {
+    background-image:url("../images/pic-btn-industrial.jpg" );
+    height: 629px;
+    width: 353px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.index-menu-option-title div { 
+    margin-bottom: 10px;
+}
+
+.index-menu-option-title img { 
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0;
+}
+
+.index-menu-option-title span {
+    background: #e9212d;
+    padding: 3px 5px;
+    opacity: .9;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: PTBoldItalic;
+}
+
+.index-menu-option-title a {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.index-menu-option-title a:hover {
+    z-index: 2;
+    background: #e9212d8a;
+    transition: all .3s;
+ }
+
+ .index-menu-option-title a:hover > span {
+    background: transparent !important;
+    transition: all .3s;
+}
+
+.index-menu-option-title a:hover > div img{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.our-company-container {
+    background-image: url("../images/mb-home.jpg");
+    padding: 70px 0;
+    min-height: 600px;
+    border-top: 1px solid white;
+    background-size: 100%;
+    color: white;
+}
+
+.our-company-item {
+    padding: 20px;
+    line-height: 30px;
+}
+.our-company-title {
+    text-align: center;
+    font-family: PTItalic;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+}
+.our-company-text {
+    text-align: justify;
+    max-width: 670px;
+}
+/*-----------------------------------END INDEX.HTML STYLES-----------------------------------*/
+/*-----------------------------------RECETARIO.HTML STYLES-----------------------------------*/
+.recipe-book-title {
+    width: 550px;
+    color: #102638;
+    text-align: center;
+    font-size: 24px;
+    font-family: PTItalic;
+    margin-bottom: 40px;
+    line-height: 160%;
+}
+.recipe-book-title i {
+    color: #102638;
+}
+.recipe-book-column {
+    padding: 18px;
+}
+.recipe-book-field {
+    height: 672px;
+}
+.recipe-book-field-tiny {
+    height: 400px;
+}
+.recipe-book-item-image , .recipe-book-item-image-tiny {
+    width: 100%;
+    height: 100%;
+    max-height: 480px;
+    max-width: 450px;
+    border-bottom: 10px solid #e9212d;
+    border-radius: 3px;
+}
+.recipe-book-item-image-tiny {
+    max-height: 240px;
+}
+.recipe-book-baja-california {
+    background-image: url("../images/recetario/baja-california/thumb.png" );
+}
+.recipe-book-sinaloense {
+    background-image: url("../images/recetario/sinaloense/thumb.png" );
+}
+.recipe-book-chiapaneco {
+    background-image: url("../images/recetario/chiapaneco/thumb.png" );
+}
+.recipe-book-yucateco {
+    background-image: url("../images/recetario/yucateco/thumb.png" );
+}
+.recipe-book-tabasqueno {
+    background-image: url("../images/recetario/tabasqueno/thumb.png" );
+}
+.recipe-book-norteno {
+    background-image: url("../images/recetario/norteno/thumb.png" );
+}
+.recipe-book-veracruzano {
+    background-image: url("../images/recetario/veracruzano/thumb.png" );
+}
+.recipe-book-image {
+    height: 800px;
+    width: 100%;
+}
+.recipe-book-detail-chiapaneco {
+    background-image: url("../images/recetario/chiapaneco/1.jpg" );
+}
+.recipe-book-detail-sinaloense {
+    background-image: url("../images/recetario/sinaloense/1.jpg" );
+}
+.recipe-book-detail-yucateco {
+    background-image: url("../images/recetario/yucateco/1.jpg" );
+}
+.recipe-book-detail-baja-california {
+    background-image: url("../images/recetario/baja-california/1.jpg" );
+}
+.recipe-book-detail-tabasqueno {
+    background-image: url("../images/recetario/tabasqueno/1.jpg" );
+}
+.recipe-book-detail-norteno {
+    background-image: url("../images/recetario/norteno/1.jpg" );
+}
+.recipe-book-detail-veracruzano {
+    background-image: url("../images/recetario/veracruzano/1.jpg" );
+}
+/*-----------------------------------END RECETARIO.HTML STYLES-----------------------------------*/
+/*-----------------------------------PRODUCT CATALOG.HTML STYLES-----------------------------------*/
+.product-catalog {
+    border-top: 10px solid #e5e5e5;
+}
+
+.product-catalog .navigation-menu {
+    min-height: 842.750px;
+}
+.effect-test:hover {
+    background-size: 540px;
+    transition: 2s;
+}
+.product-catalog h1 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.product-catalog .main-option-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-catalog .main-option-title figure {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.product-catalog .main-option-title:hover figure { 
+    transform: scale(1.1);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+
+.product-catalog .main-option-title img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-catalog .main-option-title span{
+    position: absolute;
+    color: #fff;
+    padding: 2px 30px;
+}
+
+
+.wheat-line {
+    background-image: url("../images/b-trigo.jpg" );
+    flex: 0 0 25vw;
+    background-size: 100% 100%;
+
+}
+
+.potato-line {
+    background-image: url("../images/b-papa.jpg" );
+    flex: 0 0 25vw;
+    background-size: 100% 100%;
+
+}
+
+.corn-line {
+    background-image: url("../images/b-maiz.jpg" );
+    flex: 0 0 25vw;
+    background-size: 100% 100%;
+
+}
+
+.suncereal {
+    background-image: url("../images/b-suncereal.jpg" );
+    flex: 0 0 25vw;
+    background-size: 100% 100%;
+
+}
+/*-----------------------------------END CATALOG.HTML STYLES-----------------------------------*/
+/*-----------------------------------CONTACTO.HTML STYLES-----------------------------------*/
+.opacity-0 {
+    opacity: 0;
+}
+.inputForm {
+    position: absolute;
+}
+.contact-title {
+    height: 300px;
+    background-image: url("../images/banner-bolsa-trabajo-md2.jpg");
+    width: 100%;
+    line-height: 0px;
+}
+.contact-item, .contact-item ul > li, .contact-item ul {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5c5c5c;
+    list-style-type: none;
+    width: 100%;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-element {
+    padding: 10px;
+    width: 100%;
+}
+.form-element input {
+    background-color: #f0f0f0;
+    height: 60;
+    border-radius: 2px;
+    border: 0px;
+}
+.contact-vta-item {
+    width: 390px;
+}
+.contact-vta-item ul {
+   list-style-type: none;
+}
+/*-----------------------------------END CONTACTO.HTML STYLES-----------------------------------*/
+/*-----------------------------------PRODUCTS CATEGORY.HTML STYLES-----------------------------------*/
+.products-catalog header {
+    position: absolute;
+    width: 100%;
+    background: #ffffffbd;
+}
+#banner-products-category {
+    position: relative;
+    z-index: -1;
+}
+
+#banner-products-category span{
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+#banner-products-category.banner-wheat-line {
+    background-image: url("../images/productos/596f66a_ffd.jpg" );
+    height: 380px;
+}
+
+#banner-products-category.banner-potato-line {
+    background-image: url("../images/productos/156005c_817.jpg" );
+    height: 380px;
+}
+
+#banner-products-category.banner-corn-line {
+    background-image: url("../images/productos/4a8c9bb_6ba.jpg" );
+    height: 380px;
+}
+
+.product {
+    margin-bottom: 50px;
+    width:25%;
+    padding: 15px;
+}
+
+.product i {
+    font-weight: normal;
+}
+
+.product a {
+    display: block;
+    outline: 0;
+}
+
+.product a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.product figure {
+    border-bottom: 10px solid #284054;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.product figure img{
+    width: 100%;
+}
+
+.product a:hover figure .hov {
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(180deg);
+    -moz-transform: scale(1) rotate(180deg);
+    -o-transform: scale(1) rotate(180deg);
+    transform: scale(1) rotate(180deg);
+}
+
+.product  a figure .hov {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+}
+
+.product a:hover figure:before {
+    opacity: .68;
+}
+
+.product a figure:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #102638;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.product a h2 {
+    font-size: 18px;
+    color: #102638;
+    font-family: PTItalic;
+    margin: 0;
+    padding: 20px 0 7px;
+}
+
+.product a p {
+    color: #102638;
+    line-height: 150%;
+    margin: 0;
+    font-size: 14px;
+}
+
+#products-listing {
+    padding-top: 50px;
+}
+
+.new-products-catalog-bcategory
+{
+    background: #f0f0f0;
+    padding: 50px 0 0;
+}
+
+.new-products-catalog-bcategory .title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: PTBoldItalic;
+}
+
+.new-products-catalog-bcategory .title i{
+    color: #e9212d;
+    font-size: 24px;
+}
+/*-----------------------------------END PRODUCTS CATEGORY.HTML STYLES-----------------------------------*/
+/*-----------------------------------JOB.HTML STYLES-----------------------------------*/
+.job-background {
+    height: 600px;
+    border: 1px solid red;
+    background-image: url("../images/persona-bolsa-trabajo.png");
+    width: 200px;
+    line-height: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*-----------------------------------END JOB.HTML STYLES-----------------------------------*/
+/*-----------------------------------ITSMB.HTML STYLES-----------------------------------*/
+.itsmb-title {
+    background-image: url("../images/banner-negocio-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+.gen-nav-menu {
+    height: 60px;
+    background: #e4e4e4;
+}
+.gen-nav-menu a {
+    color: #102638;
+}
+.gen-nav-menu div {
+    /* margin: 0 10px 0 10px; */
+    padding: 0 20px 0 20px;
+}
+.itsmb-tutorial {
+    background: url(../images/back-prin-inter.jpg) center top/cover no-repeat #102638;
+    color: #fff;
+    height: 540px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.itsmb-pan-style {
+    height: 84px;
+}
+.itsmb-product-area {
+    height: 750px;
+}
+.itsmb-product-quantityes {
+    width: 150px;
+    text-align: center;
+    color: #7d7d7d;
+    line-height: 60%;
+    font-size: 30px;
+    font-family: PTItalic;
+    margin: 0;
+    padding: 0;
+}
+.itsmb-product-quantityes small {
+    font-size: 19px;
+}
+.itsmb-product-catalog {
+    background: linear-gradient(to bottom,#e3391f 0,#e75b22 100%);
+}
+.itsmb-see-frying-manual {
+    background: linear-gradient(to bottom,#18a552 0,#80c158 100%);
+}
+/*-----------------------------------END ITSMB JOB.HTML STYLES-----------------------------------*/
+/*-----------------------------------FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
+.frequent-questions-container {
+    height: 540px;
+    padding: 250px 0 300px;
+    background: url(../images/banner-faq.jpg) center top/cover no-repeat #d2ccc7;
+}
+.frequent-questions-question {
+    color: #e5e5e5;
+    font-size: 20px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+/*-----------------------------------END FREQUENT QUESTIONS.HTML STYLES-----------------------------------*/
+/*-----------------------------------PRODUCTS.HTML STYLES-----------------------------------*/
+.product-detail h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+}
+
+.product-detail .image-control-detail {
+    position: relative;
+}
+.product-detail .product-image{
+    padding: 0;
+    margin: 0;
+}
+
+.product-detail #definition-details {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.product-detail #definition-details .item-title-red i {
+    font-size: 20px;
+    color: #e9212d;
+}
+
+.product-detail #definition-details .item-title-red{
+    margin: 0;
+}
+
+.product-detail #definition-details p{
+    color: #102638;
+    padding: 0 5px 15px 0;
+    margin:0;
+}
+
+#similar-products>div{
+    padding: 50px 0;
+}
+
+#similar-products .similar-product .product-title i
+{
+    font-size: 20px; 
+}
+#similar-products .item-title-red i {
+    margin: 0 0 40px;
+    padding: 0;
+}
+
+#similar-products .subtitle i{
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.change-product-view {
+    background: 0 0!important;
+    color: #102638!important;
+    font-size: 16px;
+    border: 2px solid #102638;
+    border-radius: 5px;
+    background: 0 0;
+    padding: 8px 15px;
+    outline: 0;
+    font-family: PTItalic;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.change-product-view:hover {
+    background-color: #102638 !important;
+    color: #fff !important;
+}
+
+.change-product-view:hover +  .product-image #raw-product-image {
+    opacity: 0;
+    display:none;
+}
+
+.product-image #fried-product-image {
+    display:none;
+    margin: auto;
+}
+
+.change-product-view:hover +  .product-image>#fried-product-image {
+    display:block;
+    opacity: 1;
+}
+/*-----------------------------------END PRODUCTS.HTML STYLES-----------------------------------*/
+/*-----------------------------------SLIDER STYLES-----------------------------------*/
+
+/* On hover, add a black background color with a little bit see-through */
+.slider-container-image {
+    max-height: 450px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*-----------------------------------END SLIDER STYLES-----------------------------------*/
+/*-----------------------------------IM FRYER STYLES-----------------------------------*/
+.im-fryer-title {
+    background-image: url("../images/banner-freidor-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+.im-a-fryer-another-sites img {
+    border-bottom: 10px solid #e9212d;
+}
+   
+/*-----------------------------------END IM FRYER STYLES-----------------------------------*/
+/*-----------------------------------IM WHOLESALER STYLES-----------------------------------*/
+.im-wholesaler-title {
+    background-image: url("../images/banner-mayorista-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+.im-wholesaler-service {
+    background: url(../images/botana-anillos.jpg) center top/cover no-repeat #e9212d;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 550px;
+}
+.im-wholesaler-service-color {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: #e9212d;
+    opacity: .8;
+    -webkit-transform: skew(
+40deg
+) translateX(-30%);
+    -moz-transform: skew(40deg) translateX(-30%);
+    -o-transform: skew(40deg) translateX(-30%);
+    transform: skew(
+40deg
+) translateX(-30%);
+}
+.im-wholesale-anothers-title {
+    height: 67px;
+    width: 350px;
+    position: absolute;
+    text-align: center;
+    border-radius: 4px;
+}
+/*-----------------------------------END IM AN INDUSTRIAL STYLES-----------------------------------*/
+/*-----------------------------------IM IM AN INDUSTRIAL STYLES-----------------------------------*/
+.i-am-an-industrial-snack-maker-title {
+    background-image: url("../images/banner-fabricante-md.jpg");
+    height: 430px;
+    width: 100%;
+    line-height: 0px;
+}
+
+.i-am-an-industrial-snack-maker-international {
+    background-image: url(../images/back-paises.png) ;
+}
+/*-----------------------------------END IM A INDUSTRIAL STYLES-----------------------------------*/
+/*-Suncereal header-*/
+* {box-sizing: border-box;}
+
+body { 
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.nutricion-conviene {
+    background: url('../images/banner.jpg') center no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px; color: #fff;
+}
+.f-size-21 {
+    font-size: 21px;
+}
+.button-sun {
+    margin-top:  15px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    border: 0px;
+    border-radius: 6px; 
+}
+.conviene-button {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.sun-banner-2 {
+    background: url('../images/banner2.jpg') center no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #fff;
+}
+.sun-banner-2-title {
+    color: #093880;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.nuestras-marcas {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    text-transform: uppercase;
+}
+.sun-contact {
+    background: #F8F8F8;
+    padding-bottom: 80px;
+}
+.sun-nuestras-marcas {
+    padding-bottom: 80px;
+}
+.f-weight-500 {
+    font-weight: 500 !important;
+}
+.embed-responsive-4by3 {
+    padding-bottom: 75%;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+}
+.sun-catalogo-productos {
+    background: url('../images/banner3.jpg') center no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #fff;
+}
